@@ -1,0 +1,122 @@
+import React, { useState } from "react";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import Image from "next/image";
+import Typography from "@mui/material/Typography";
+import ImageModal from "../components/ImageModal";
+import styles from "../styles/components/Photos.module.css";
+
+function srcset(image, size, rows = 1, cols = 1) {
+  return {
+    src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
+    srcSet: `${image}?w=${size * cols}&h=${
+      size * rows
+    }&fit=crop&auto=format&dpr=2 2x`,
+  };
+}
+
+export default function QuiltedImageList() {
+  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+  async function handleOpen(index) {
+    await setIndex(index);
+    setOpen(true);
+  }
+
+  return (
+    <section id="Photos">
+      <h5 className={styles.Photos_h5_title}>Nos photos</h5>
+      <ImageList
+        sx={{ width: "90%", height: "auto", margin: "0 auto" }}
+        variant="quilted"
+        cols={4}
+        rowHeight={121}
+      >
+        {itemData.map((item, indexPhotos) => (
+          <ImageListItem
+            key={indexPhotos}
+            cols={item.cols || 1}
+            rows={item.rows || 1}
+          >
+            <Image
+              {...srcset(item.img, 121, item.rows, item.cols)}
+              alt={item.title}
+              loading="lazy"
+              layout="fill"
+              onClick={() => handleOpen(indexPhotos)}
+              className={styles.Photos_image}
+            />
+          </ImageListItem>
+        ))}
+      </ImageList>
+      <ImageModal
+        open={open}
+        setOpen={setOpen}
+        title={itemData[0].title}
+        index={index}
+        setIndex={setIndex}
+        itemData={itemData}
+      />
+    </section>
+  );
+}
+
+const itemData = [
+  {
+    img: "/photo.jpg",
+    title: "Breakfast",
+    rows: 2,
+    cols: 2,
+  },
+  {
+    img: "/photo4.jpg",
+    title: "Burger",
+  },
+  {
+    img: "/photo3.jpg",
+    title: "Camera",
+  },
+  {
+    img: "/photo2.jpg",
+    title: "Coffee",
+    cols: 2,
+  },
+  {
+    img: "/photo5.jpg",
+    title: "Hats",
+    cols: 2,
+  },
+  {
+    img: "/photo6.jpg",
+    title: "Honey",
+    author: "@arwinneil",
+    rows: 2,
+    cols: 2,
+  },
+  {
+    img: "/photo7.jpg",
+    title: "Basketball",
+  },
+  {
+    img: "/photo8.jpg",
+    title: "Fern",
+  },
+  {
+    img: "/photo10.jpg",
+    title: "Mushrooms",
+    rows: 2,
+  },
+  {
+    img: "/photo9.jpg",
+    title: "Tomato basil",
+  },
+  // {
+  //   img: "/photo.jpg",
+  //   title: "Bike",
+  //   cols: 2,
+  // },
+  // {
+  //   img: "/photo.jpg",
+  //   title: "Sea star",
+  // },
+];
