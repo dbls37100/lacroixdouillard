@@ -13,7 +13,7 @@ const Description = () => {
         plus grandes envergures pouvant ainsi accueillir 1000 personnes. Ce
         décor hors du commun fera de votre évènement un moment inoubliable.
       </p> */}
-      <h2>Les Caves de la croix Douillard, qu'est ce que c'est ? </h2>
+      <h2>Les Caves de la croix Douillard, qu&apos;est ce que c&apos;est ? </h2>
       {/* <Image
         src="/unesco.jpg"
         alt="description"
@@ -25,14 +25,14 @@ const Description = () => {
         Ancienne exploitation de roche dure, ayant servi à bâtir les châteaux et
         monuments qui font la richesse du Val de Loire, Les Caves de la Croix
         Douillard sont en bordure de Loire Fleuve Royal classé patrimoine de
-        l'unesco. Situées dans un cadre naturel de roche et de verdure qui vous
-        invite à entrer dans ce décor agréable et inhabituel, elles ont été
+        l&apos;unesco. Situées dans un cadre naturel de roche et de verdure qui
+        vous invite à entrer dans ce décor agréable et inhabituel, elles ont été
         aménagées pour offrir un espace de réception dans un cadre exceptionnel
         et chaleureux. Leur caractère pittoresque se prête au jeu de nombreuses
-        mises en scène et invite à l'insolite. Offrant un espace de réception de
-        50 à 1000 personnes sur 1800 m² modulable et réparti en plusieurs
-        salles, elles sont largement pourvues en espace cuisine pour les
-        traiteurs, en vestiaires et sanitaires, ainsi qu'un parking en
+        mises en scène et invite à l&apos;insolite. Offrant un espace de
+        réception de 50 à 1000 personnes sur 1800 m² modulable et réparti en
+        plusieurs salles, elles sont largement pourvues en espace cuisine pour
+        les traiteurs, en vestiaires et sanitaires, ainsi qu&apos;un parking en
         conséquence.
       </p>
     </div>
