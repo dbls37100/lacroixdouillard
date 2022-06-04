@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Description from "../components/Description";
 import Photos from "../components/Photos";
+import OurRoom from "../components/OurRoom";
 import { useRouter } from "next/router";
 
 export default function Home() {
@@ -57,114 +58,7 @@ export default function Home() {
         <Banner />
         <Description />
         <Photos />
-        <div className={styles.Contact_div_description}>
-          <h2 className={styles.Contact_h2_title}>Contact</h2>
-          <p className={styles.Contact_p_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            quisquam.
-          </p>
-        </div>{" "}
-        <div className={styles.Contact_div_description}>
-          <h2 className={styles.Contact_h2_title}>Contact</h2>
-          <p className={styles.Contact_p_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            quisquam.
-          </p>
-        </div>{" "}
-        <div className={styles.Contact_div_description}>
-          <h2 className={styles.Contact_h2_title}>Contact</h2>
-          <p className={styles.Contact_p_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            quisquam.
-          </p>
-        </div>{" "}
-        <div className={styles.Contact_div_description}>
-          <h2 className={styles.Contact_h2_title}>Contact</h2>
-          <p className={styles.Contact_p_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            quisquam.
-          </p>
-        </div>{" "}
-        <div className={styles.Contact_div_description}>
-          <h2 className={styles.Contact_h2_title}>Contact</h2>
-          <p className={styles.Contact_p_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            quisquam.
-          </p>
-        </div>{" "}
-        <div className={styles.Contact_div_description}>
-          <h2 className={styles.Contact_h2_title}>Contact</h2>
-          <p className={styles.Contact_p_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            quisquam.
-          </p>
-        </div>{" "}
-        <div className={styles.Contact_div_description}>
-          <h2 className={styles.Contact_h2_title}>Contact</h2>
-          <p className={styles.Contact_p_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            quisquam.
-          </p>
-        </div>{" "}
-        <div className={styles.Contact_div_description}>
-          <h2 className={styles.Contact_h2_title}>Contact</h2>
-          <p className={styles.Contact_p_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            quisquam.
-          </p>
-        </div>{" "}
-        <div className={styles.Contact_div_description}>
-          <h2 className={styles.Contact_h2_title}>Contact</h2>
-          <p className={styles.Contact_p_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            quisquam.
-          </p>
-        </div>{" "}
-        <div className={styles.Contact_div_description}>
-          <h2 className={styles.Contact_h2_title}>Contact</h2>
-          <p className={styles.Contact_p_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            quisquam.
-          </p>
-        </div>{" "}
-        <div className={styles.Contact_div_description}>
-          <h2 className={styles.Contact_h2_title}>Contact</h2>
-          <p className={styles.Contact_p_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            quisquam.
-          </p>
-        </div>{" "}
-        <div className={styles.Contact_div_description}>
-          <h2 className={styles.Contact_h2_title}>Contact</h2>
-          <p className={styles.Contact_p_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            quisquam.
-          </p>
-        </div>{" "}
-        <div className={styles.Contact_div_description}>
-          <h2 className={styles.Contact_h2_title}>Contact</h2>
-          <p className={styles.Contact_p_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            quisquam.
-          </p>
-        </div>{" "}
-        <div className={styles.Contact_div_description}>
-          <h2 className={styles.Contact_h2_title}>Contact</h2>
-          <p className={styles.Contact_p_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            quisquam.
-          </p>
-        </div>{" "}
-        <div id="first-section" className={styles.Contact_div_description}>
-          <h2 className={styles.Contact_h2_title}>Contact</h2>
-          <p className={styles.Contact_p_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            quisquam.
-          </p>
-        </div>
-        <button onClick={scrollToTop} className={styles.Contact_button}>
-          Back to top
-        </button>
+        <OurRoom />
       </main>
 
       <footer className={styles.footer}>

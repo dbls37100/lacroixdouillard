@@ -1,7 +1,9 @@
+import styles from "../styles/components/OurRoom.module.css";
+
 const OurRoom = () => {
   return (
-    <div>
-      <h5>Nos Salles</h5>
+    <div className={styles.OurRoom} id="OurRoom">
+      <h2>Nos Salles</h2>
     </div>
   );
 };

@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 const Navbar = ({ colorAfter, setColorAfter }) => {
   const [height, setHeight] = useState(65);
   const [width, setWidth] = useState(65);
+  const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
 
   // useEffect(() => {
@@ -115,25 +116,25 @@ const Navbar = ({ colorAfter, setColorAfter }) => {
           <div id="wrapper" className={styles.Navbar_div_menu}>
             <ul className={styles.Navbar_ul_menu} id="Navbar_ul">
               <li className={styles.Navbar_li_menu}>
-                <div
+                <NavLink
                   className={colorAfter ? styles.different : styles.different2}
                   id="different"
-                  onClick={() => distance("navbar", "first-section")}
+                  href="/"
                 >
                   Acceuil
-                </div>
+                </NavLink>
                 {/* <NavLink  href="/">
               Acceuil
             </NavLink> */}
               </li>
               <li className={styles.Navbar_li_menu}>
-                <NavLink
+                <div
                   className={colorAfter ? styles.different : styles.different2}
                   id="different"
-                  href="/#first-section"
+                  onClick={() => distance("navbar", "OurRoom")}
                 >
-                  Nos services
-                </NavLink>
+                  Nos salles
+                </div>
               </li>
               <li className={styles.Navbar_li_menu}>
                 <div
@@ -155,8 +156,87 @@ const Navbar = ({ colorAfter, setColorAfter }) => {
               </li>
             </ul>
           </div>
+          <div
+            className={styles.Navbar_div_menu_mobile}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <Image
+              src={!colorAfter ? "/burgerMenu.png" : "/darkBurgerMenu.png"}
+              id="logo"
+              alt="logo"
+              width={45}
+              height={50}
+              className={styles.Navbar_logo_mobile_menu}
+            />
+          </div>
         </div>
       </div>
+      {isOpen && (
+        <div className={styles.Navbar_div_menu_mobile_content}>
+          <ul className={styles.Navbar_ul_menu_mobile}>
+            <li
+              className={styles.Navbar_li_menu_mobile}
+              onClick={() => setIsOpen(false)}
+            >
+              <NavLink
+                // className={colorAfter ? styles.different : styles.different2}
+                id="different"
+                href="/"
+              >
+                Acceuil
+              </NavLink>
+            </li>
+            <li
+              className={styles.Navbar_li_menu_mobile}
+              onClick={() => setIsOpen(false)}
+            >
+              <div
+                // className={colorAfter ? styles.different : styles.different2}
+                id="different"
+                onClick={() => distance("navbar", "Description")}
+              >
+                Qui sommes nous
+              </div>
+            </li>
+            <li
+              className={styles.Navbar_li_menu_mobile}
+              onClick={() => setIsOpen(false)}
+            >
+              <div
+                // className={colorAfter ? styles.different : styles.different2}
+                id="different"
+                onClick={() => distance("navbar", "Photos")}
+              >
+                Nos photos
+              </div>
+            </li>
+            <li
+              className={styles.Navbar_li_menu_mobile}
+              onClick={() => setIsOpen(false)}
+            >
+              <div
+                className={colorAfter ? styles.different : styles.different2}
+                id="different"
+                onClick={() => distance("navbar", "OurRoom")}
+              >
+                Nos salles
+              </div>
+            </li>
+            <li
+              className={styles.Navbar_li_menu_mobile}
+              onClick={() => setIsOpen(false)}
+            >
+              <NavLink
+                // className={colorAfter ? styles.different : styles.different2}
+                id="different"
+                href="/contact"
+              >
+                Nous contacter
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };

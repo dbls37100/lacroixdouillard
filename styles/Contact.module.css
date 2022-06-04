@@ -125,4 +125,14 @@
     width: 100%;
     flex-direction: column;
   }
+  .Contact {
+    padding: 0 5%;
+    margin-top: 15%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+  }
 }
