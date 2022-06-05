@@ -5,6 +5,9 @@ import Image from "next/image";
 import styles from "../styles/Contact.module.css";
 import emailjs from "emailjs-com";
 import validator from "validator";
+import Alert from "@mui/material/Alert";
+import AlertTitle from "@mui/material/AlertTitle";
+import { Snackbar } from "@mui/material";
 
 const Contact = () => {
   const [colorAfter, setColorAfter] = useState(true);
@@ -12,9 +15,11 @@ const Contact = () => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [severity, setSeverity] = useState("success");
   const [peopleNumber, setPeopleNumber] = useState("");
   const [date, setDate] = useState("");
   const [company, setCompany] = useState("");
+  const [openAlert, setOpenAlert] = useState(false);
 
   const [error, setError] = useState("");
 
@@ -38,15 +43,17 @@ const Contact = () => {
             setDate("");
             setCompany("");
             console.log(result.text);
+            setOpenAlert(true);
+            setSeverity("success");
             setError("Votre message a bien été envoyé");
           },
           (error) => {
             console.log(error.text);
+            setOpenAlert(true);
+            setSeverity("error");
             setError(error.text);
           }
         );
-      setMessage("");
-      setEmail("");
     } else if (
       validator.isEmail(email) &&
       !message &&
@@ -54,6 +61,8 @@ const Contact = () => {
       peopleNumber &&
       date
     ) {
+      setOpenAlert(true);
+      setSeverity("error");
       setError("Veuillez entrer un message");
     } else if (
       !validator.isEmail(email) &&
@@ -62,6 +71,8 @@ const Contact = () => {
       peopleNumber &&
       date
     ) {
+      setOpenAlert(true);
+      setSeverity("error");
       setError("Veuillez entrer une adresse email valide");
     } else if (
       validator.isEmail(email) &&
@@ -70,6 +81,8 @@ const Contact = () => {
       peopleNumber &&
       date
     ) {
+      setOpenAlert(true);
+      setSeverity("error");
       setError("Veuillez entrer votre nom");
     } else if (
       validator.isEmail(email) &&
@@ -78,6 +91,8 @@ const Contact = () => {
       !peopleNumber &&
       date
     ) {
+      setOpenAlert(true);
+      setSeverity("error");
       setError("Veuillez entrer le nombre de personnes");
     } else if (
       validator.isEmail(email) &&
@@ -86,8 +101,12 @@ const Contact = () => {
       peopleNumber &&
       !date
     ) {
+      setOpenAlert(true);
+      setSeverity("error");
       setError("Veuillez entrer la date");
     } else {
+      setOpenAlert(true);
+      setSeverity("error");
       setError("Veuillez remplir tous les champs");
     }
   };
@@ -175,6 +194,7 @@ const Contact = () => {
               className={styles.Contact_input}
               placeholder="Message"
               id="Message"
+              required={true}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               name="Message"
@@ -183,6 +203,25 @@ const Contact = () => {
             <button className={styles.Contact_button_submit}>Envoyer</button>
           </form>
         </div>
+        <Snackbar
+          open={openAlert}
+          autoHideDuration={2000}
+          onClose={() => setOpenAlert(false)}
+          sx={{
+            width: "100%",
+          }}
+        >
+          <Alert
+            onClose={() => setOpenAlert(false)}
+            severity={severity}
+            sx={{ width: "50%", margin: "auto" }}
+          >
+            <AlertTitle>
+              {severity === "success" ? "succées" : "erreur"}
+            </AlertTitle>
+            {error}
+          </Alert>
+        </Snackbar>
       </main>
       <footer className={styles.footer}>
         <a
