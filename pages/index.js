@@ -51,6 +51,10 @@ export default function Home() {
       <Head>
         <title>Les Caves de la croix Douillard</title>
         <meta name="description" content="Votre lieux de fetes à amboise" />
+        <meta
+          name="google-site-verification"
+          content="ca7u7GMXe6n3aqnzsFOyf9iwVOHG6NAMCHPZVeut2bI"
+        />
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="robots"
