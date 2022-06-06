@@ -80,14 +80,31 @@ const TransitionsModal = ({
               className={styles.ImageModal_image}
             />
             <div className={styles.Photos_card_infos}>
-              <div className={styles.Photos_div_previous}>
-                <div onClick={handlePreviousImage}>
-                  <p className={styles.Photos_p_previous}>Précédent</p>
+              <div
+                onClick={handlePreviousImage}
+                className={styles.Photos_div_previous}
+              >
+                <div>
+                  <div className={styles.Photos_button}>
+                    <Image
+                      src="/left-arrow.png"
+                      alt="Previous"
+                      width={30}
+                      height={30}
+                    />
+                  </div>
                 </div>
               </div>
-              <div className={styles.Photos_div_next}>
-                <div onClick={handleNextImage}>
-                  <p className={styles.Photos_p_next}>Suivant</p>
+              <div onClick={handleNextImage} className={styles.Photos_div_next}>
+                <div>
+                  <div className={styles.Photos_button}>
+                    <Image
+                      src="/right-arrow.png"
+                      alt="Next"
+                      width={30}
+                      height={30}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
