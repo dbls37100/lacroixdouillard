@@ -113,4 +113,11 @@
     object-fit: cover;
     cursor: pointer;
   }
+  .ImageModal_modal {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 85%;
+    margin: auto;
+  }
 }
