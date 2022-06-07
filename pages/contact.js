@@ -182,8 +182,10 @@ const Contact = () => {
               />
               <input
                 className={styles.Contact_input}
-                type="text"
+                type="date"
                 placeholder="Date"
+                // onFocus={(e) => (e.target.type = "date")}
+                // onBlur={(e) => (e.target.type = "text")}
                 id="Date"
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
