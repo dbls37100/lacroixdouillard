@@ -99,7 +99,7 @@ export default function BasicTable() {
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                L'Ensemble des Salles
+                L&apos;Ensemble des Salles
               </TableCell>
               <TableCell align="right">1000 m²</TableCell>
               <TableCell align="right">1000</TableCell>
