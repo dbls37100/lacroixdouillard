@@ -15,6 +15,10 @@ export default function BasicTable() {
       <TableContainer
         component={Paper}
         className={styles.OurRoom_TableContainer}
+        sx={{
+          maxWidth: "80%",
+          margin: "auto",
+        }}
       >
         <Table aria-label="simple table">
           <TableHead>
@@ -56,6 +60,10 @@ export default function BasicTable() {
       <TableContainer
         component={Paper}
         className={styles.OurRoom_TableContainer}
+        sx={{
+          maxWidth: "80%",
+          margin: "auto",
+        }}
       >
         <Table aria-label="simple table">
           <TableHead>
