@@ -1,5 +1,21 @@
 .OurRoom {
+  margin: 5% 0 5% 0;
   width: 100%;
-  height: 50vh;
   text-align: center;
+}
+
+.OurRoom_h5_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+
+.OurRoom_TableContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 5%;
 }
