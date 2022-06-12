@@ -10,7 +10,7 @@ import styles from "../styles/components/OurRoom.module.css";
 
 export default function BasicTable() {
   return (
-    <div className={styles.OurRoom}>
+    <div id="OurRoom" className={styles.OurRoom}>
       <h5 className={styles.OurRoom_h5_title}>Salles & espaces</h5>
       <TableContainer
         component={Paper}
@@ -76,9 +76,7 @@ export default function BasicTable() {
             </TableRow>
           </TableHead>
           <TableBody>
-            <TableRow
-            // sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-            >
+            <TableRow>
               <TableCell scope="row">
                 Salle François 1er + Caveau + Bar
               </TableCell>

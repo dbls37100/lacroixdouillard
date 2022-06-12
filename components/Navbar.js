@@ -13,37 +13,6 @@ const Navbar = ({ colorAfter, setColorAfter }) => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", () => {
-  //     const navbar = document.getElementById("navbar");
-  //     const logo = document.getElementById("logo");
-  //     const Navbar_ul = document.getElementById("Navbar_ul");
-  //     console.log(window.scrollY, navbar);
-  //     if (window.location.pathname === "/contact") {
-  //       navbar.style.color = "black";
-  //     }
-  //     if (window.scrollY > 500) {
-  //       navbar.classList.add("navbar_scrolled");
-  //       navbar.style.backgroundColor = "white";
-  //       navbar.style.color = "black";
-  //       navbar.style.height = "15vh";
-  //       // navbar.style.animation =
-  //       //   "scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both";
-  //       setHeight(50);
-  //       setWidth(50);
-  //       // Navbar_ul.style.alignItems = "top";
-  //     } else {
-  //       if (window.location.pathname !== "/contact") {
-  //         navbar.style.color = "white";
-  //       }
-  //       navbar.style.backgroundColor = "rgba(0,0,0,0)";
-  //       navbar.style.height = "20vh";
-  //       setHeight(55);
-  //       setWidth(55);
-  //     }
-  //   });
-  // }, []);
-
   function getPositionAtCenter(element) {
     const { top, left, width, height } = element.getBoundingClientRect();
     return {
@@ -80,7 +49,13 @@ const Navbar = ({ colorAfter, setColorAfter }) => {
   }
   return (
     <nav
-      className={colorAfter ? styles.Navbar_nav : styles.Navbar_nav2}
+      className={
+        colorAfter
+          ? styles.Navbar_nav
+          : isOpen
+          ? styles.Navbar_nav
+          : styles.Navbar_nav2
+      }
       id="navbar"
     >
       <div className={styles.Navbar_div_Test}>
@@ -157,15 +132,27 @@ const Navbar = ({ colorAfter, setColorAfter }) => {
             </ul>
           </div>
           <div
-            className={styles.Navbar_div_menu_mobile}
+            className={
+              isOpen
+                ? styles.Navbar_div_menu_mobile
+                : styles.Navbar_div_menu_mobile
+            }
             onClick={() => setIsOpen(!isOpen)}
           >
             <Image
-              src={!colorAfter ? "/burgerMenu.png" : "/darkBurgerMenu.png"}
+              src={
+                !colorAfter
+                  ? isOpen
+                    ? "/close.png"
+                    : "/burgerMenu.png"
+                  : isOpen
+                  ? "/close.png"
+                  : "/darkBurgerMenu.png"
+              }
               id="logo"
               alt="logo"
-              width={45}
-              height={50}
+              width={!isOpen ? 45 : 30}
+              height={!isOpen ? 50 : 30}
               className={styles.Navbar_logo_mobile_menu}
             />
           </div>
@@ -183,7 +170,7 @@ const Navbar = ({ colorAfter, setColorAfter }) => {
                 id="different"
                 href="/"
               >
-                Acceuil
+                Accueil
               </NavLink>
             </li>
             <li
