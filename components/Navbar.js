@@ -133,9 +133,9 @@ const Navbar = ({ colorAfter, setColorAfter }) => {
           </div>
           <div
             className={
-              isOpen
+              !isOpen
                 ? styles.Navbar_div_menu_mobile
-                : styles.Navbar_div_menu_mobile
+                : styles.Navbar_div_menu_mobileSame
             }
             onClick={() => setIsOpen(!isOpen)}
           >
