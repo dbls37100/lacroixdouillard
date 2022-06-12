@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://boisterous-pithivier-ecd9b3.netlify.app/sitemap.xml
