@@ -22,36 +22,70 @@ export default function BasicTable() {
       >
         <Table aria-label="simple table">
           <TableHead>
-            <TableRow>
-              <TableCell>Espace</TableCell>
-              <TableCell align="right">Superficie</TableCell>
-              <TableCell align="right">Cocktail</TableCell>
-              <TableCell align="right">Conférence</TableCell>
-              <TableCell align="right">Banquet</TableCell>
+            <TableRow className={styles.OurRoom_TableRow_Desktop_View}>
+              <TableCell scope="row">Espace</TableCell>
+              <TableCell
+                scope="row"
+                className={styles.OurRoom_TableCell_Desktop_View}
+                align="right"
+              >
+                Superficie
+              </TableCell>
+              <TableCell
+                scope="row"
+                className={styles.OurRoom_TableCell_Desktop_View}
+                align="right"
+              >
+                Cocktail
+              </TableCell>
+              <TableCell
+                scope="row"
+                className={styles.OurRoom_TableCell_Desktop_View}
+                align="right"
+              >
+                Conférence
+              </TableCell>
+              <TableCell
+                scope="row"
+                className={styles.OurRoom_TableCell_Desktop_View}
+                align="right"
+              >
+                Banquet
+              </TableCell>
+              <TableCell
+                scope="row"
+                className={styles.OurRoom_TableCell_Mobile_View}
+                align="right"
+              >
+                Assis
+              </TableCell>
+              <TableCell
+                scope="row"
+                className={styles.OurRoom_TableCell_Mobile_View}
+                align="right"
+              >
+                Debout
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             <TableRow
-              sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+            // sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
-              <TableCell component="th" scope="row">
-                Salle François 1er
-              </TableCell>
+              <TableCell>Salle François 1er</TableCell>
               <TableCell align="right">500 m²</TableCell>
               <TableCell align="right">500</TableCell>
-              <TableCell align="right">300</TableCell>
-              <TableCell align="right">450</TableCell>
+              {/* <TableCell align="right">300</TableCell>
+              <TableCell align="right">450</TableCell> */}
             </TableRow>
             <TableRow
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
-              <TableCell component="th" scope="row">
-                Salle Léonard de Vinci
-              </TableCell>
+              <TableCell>Salle Léonard de Vinci</TableCell>
               <TableCell align="right">300 m²</TableCell>
               <TableCell align="right">300</TableCell>
-              <TableCell align="right">150</TableCell>
-              <TableCell align="right">200</TableCell>
+              {/* <TableCell align="right">150</TableCell>
+              <TableCell align="right">200</TableCell> */}
             </TableRow>
           </TableBody>
         </Table>

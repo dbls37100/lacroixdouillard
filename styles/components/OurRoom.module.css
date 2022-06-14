@@ -20,3 +20,32 @@
   margin: auto;
   margin-bottom: 5%;
 }
+
+.OurRoom_TableRow_Desktop_View {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.OurRoom_TableCell_Desktop_View {
+  display: flex;
+}
+
+.OurRoom_TableCell_Mobile_View {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .OurRoom_TableCell_Desktop_View {
+    display: none;
+  }
+
+  .OurRoom_TableCell_Mobile_View {
+    display: flex;
+  }
+}

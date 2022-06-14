@@ -6,10 +6,10 @@ const Banner = () => {
     <div className={styles.Banner}>
       <div className={styles.Banner_div_text_Invisible}></div>
       <div className={styles.Banner_div_text}>
-        <h1>
-          <span className={styles.Banner_text}>
-            Bienvenue aux Caves de la Croix Douillard
-          </span>
+        <h1 className={styles.Banner_text}>
+          {/* <span> */}
+          Bienvenue aux Caves de la Croix Douillard
+          {/* </span> */}
         </h1>
         <p className={styles.Banner_text}>
           La Cave de la Croix Douillard vous accueille dans sa salle de

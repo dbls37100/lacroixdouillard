@@ -56,14 +56,13 @@ export default function Home() {
           content="ca7u7GMXe6n3aqnzsFOyf9iwVOHG6NAMCHPZVeut2bI"
         />
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="robots"
-          content="index,follow,nosnippet,max-snippet:-1,max-image-preview:none,noarchive,noimageindex,max-video-preview:-1,notranslate"
-        />
+        <meta name="robots" content="index" />
+        <meta name="robots" content="follow" />
+        <meta name="robots" content="all" />
       </Head>
 
       <main className={styles.main} style={{ scrollBehavior: "smooth" }}>
-        <NextSeo
+        {/* <NextSeo
           robotsProps={{
             nosnippet: true,
             notranslate: true,
@@ -73,7 +72,7 @@ export default function Home() {
             maxImagePreview: "none",
             maxVideoPreview: -1,
           }}
-        />
+        /> */}
         <Navbar colorAfter={colorAfter} setColorAfter={setColorAfter} />
         <Banner />
         <Description />
