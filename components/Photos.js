@@ -37,14 +37,21 @@ export default function QuiltedImageList() {
             key={indexPhotos}
             cols={item.cols || 1}
             rows={item.rows || 1}
+            sx={{
+              position: "relative",
+            }}
           >
             <Image
               {...srcset(item.img, 121, item.rows, item.cols)}
               alt={item.title}
-              loading="lazy"
+              // loading={"lazy"}
               layout="fill"
               onClick={() => handleOpen(indexPhotos)}
               className={styles.Photos_image}
+              priority={indexPhotos === 0 ? "high" : "low"}
+              sx={{
+                position: "relative",
+              }}
             />
           </ImageListItem>
         ))}
@@ -67,24 +74,29 @@ const itemData = [
     title: "Breakfast",
     rows: 2,
     cols: 2,
+    priority: 40,
   },
   {
     img: "/photo4.jpg",
     title: "Burger",
+    priority: 40,
   },
   {
     img: "/photo3.jpg",
     title: "Camera",
+    priority: 40,
   },
   {
     img: "/photo2.jpg",
     title: "Coffee",
     cols: 2,
+    priority: 40,
   },
   {
     img: "/photo5.jpg",
     title: "Hats",
     cols: 2,
+    priority: 40,
   },
   {
     img: "/photo6.jpg",
@@ -92,23 +104,28 @@ const itemData = [
     author: "@arwinneil",
     rows: 2,
     cols: 2,
+    priority: 40,
   },
   {
     img: "/photo7.jpg",
     title: "Basketball",
+    priority: 40,
   },
   {
     img: "/photo8.jpg",
     title: "Fern",
+    priority: 40,
   },
   {
     img: "/photo10.jpg",
     title: "Mushrooms",
     rows: 2,
+    priority: 40,
   },
   {
     img: "/photo9.jpg",
     title: "Tomato basil",
+    priority: 40,
   },
   // {
   //   img: "/photo.jpg",

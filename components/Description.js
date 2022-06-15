@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Description = () => {
   return (
-    <div className={styles.Description} id="Description">
+    <section className={styles.Description} id="Description">
       {/* <p>
         La Cave de la Croix Douillard vous accueille dans sa salle de réception
         au décor atypique et soigné pour organiser tous vos évènements. Dans cet
@@ -35,7 +35,7 @@ const Description = () => {
         les traiteurs, en vestiaires et sanitaires, ainsi qu&apos;un parking en
         conséquence.
       </p>
-    </div>
+    </section>
   );
 };
 

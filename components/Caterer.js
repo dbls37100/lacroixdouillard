@@ -1,8 +1,8 @@
 const Caterer = () => {
   return (
-    <div>
+    <section>
       <h6>Traiteur</h6>
-    </div>
+    </section>
   );
 };
 

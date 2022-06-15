@@ -10,7 +10,7 @@
   margin-bottom: 2.5rem;
 }
 
-.OurRoom_TableContainer {
+.OurRoom_TableContainer_desktop {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +19,10 @@
   height: 100%;
   margin: auto;
   margin-bottom: 5%;
+}
+
+.OurRoom_TableContainer_mobile {
+  display: none;
 }
 
 .OurRoom_TableRow_Desktop_View {
@@ -41,6 +45,19 @@
 }
 
 @media (max-width: 600px) {
+  .OurRoom_TableContainer_desktop {
+    display: none;
+  }
+  .OurRoom_TableContainer_mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 90%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 5%;
+  }
   .OurRoom_TableCell_Desktop_View {
     display: none;
   }

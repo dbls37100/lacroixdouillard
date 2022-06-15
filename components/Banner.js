@@ -3,7 +3,7 @@ import styles from "../styles/components/Banner.module.css";
 
 const Banner = () => {
   return (
-    <div className={styles.Banner}>
+    <section className={styles.Banner}>
       <div className={styles.Banner_div_text_Invisible}></div>
       <div className={styles.Banner_div_text}>
         <h1 className={styles.Banner_text}>
@@ -17,7 +17,7 @@ const Banner = () => {
           évènements.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

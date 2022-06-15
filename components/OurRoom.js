@@ -10,11 +10,11 @@ import styles from "../styles/components/OurRoom.module.css";
 
 export default function BasicTable() {
   return (
-    <div id="OurRoom" className={styles.OurRoom}>
+    <section id="OurRoom" className={styles.OurRoom}>
       <h5 className={styles.OurRoom_h5_title}>Salles & espaces</h5>
       <TableContainer
         component={Paper}
-        className={styles.OurRoom_TableContainer}
+        className={styles.OurRoom_TableContainer_desktop}
         sx={{
           maxWidth: "80%",
           margin: "auto",
@@ -22,50 +22,12 @@ export default function BasicTable() {
       >
         <Table aria-label="simple table">
           <TableHead>
-            <TableRow className={styles.OurRoom_TableRow_Desktop_View}>
-              <TableCell scope="row">Espace</TableCell>
-              <TableCell
-                scope="row"
-                className={styles.OurRoom_TableCell_Desktop_View}
-                align="right"
-              >
-                Superficie
-              </TableCell>
-              <TableCell
-                scope="row"
-                className={styles.OurRoom_TableCell_Desktop_View}
-                align="right"
-              >
-                Cocktail
-              </TableCell>
-              <TableCell
-                scope="row"
-                className={styles.OurRoom_TableCell_Desktop_View}
-                align="right"
-              >
-                Conférence
-              </TableCell>
-              <TableCell
-                scope="row"
-                className={styles.OurRoom_TableCell_Desktop_View}
-                align="right"
-              >
-                Banquet
-              </TableCell>
-              <TableCell
-                scope="row"
-                className={styles.OurRoom_TableCell_Mobile_View}
-                align="right"
-              >
-                Assis
-              </TableCell>
-              <TableCell
-                scope="row"
-                className={styles.OurRoom_TableCell_Mobile_View}
-                align="right"
-              >
-                Debout
-              </TableCell>
+            <TableRow>
+              <TableCell>Espace</TableCell>
+              <TableCell align="right">Superficie</TableCell>
+              <TableCell align="right">Cocktail</TableCell>
+              <TableCell align="right">Conférence</TableCell>
+              <TableCell align="right">Banquet</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -75,8 +37,8 @@ export default function BasicTable() {
               <TableCell>Salle François 1er</TableCell>
               <TableCell align="right">500 m²</TableCell>
               <TableCell align="right">500</TableCell>
-              {/* <TableCell align="right">300</TableCell>
-              <TableCell align="right">450</TableCell> */}
+              <TableCell align="right">300</TableCell>
+              <TableCell align="right">450</TableCell>
             </TableRow>
             <TableRow
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
@@ -84,8 +46,45 @@ export default function BasicTable() {
               <TableCell>Salle Léonard de Vinci</TableCell>
               <TableCell align="right">300 m²</TableCell>
               <TableCell align="right">300</TableCell>
-              {/* <TableCell align="right">150</TableCell>
-              <TableCell align="right">200</TableCell> */}
+              <TableCell align="right">150</TableCell>
+              <TableCell align="right">200</TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </TableContainer>
+      <TableContainer
+        component={Paper}
+        className={styles.OurRoom_TableContainer_mobile}
+        sx={{
+          maxWidth: "80%",
+          margin: "auto",
+        }}
+      >
+        <Table aria-label="simple table">
+          <TableHead>
+            <TableRow>
+              <TableCell>Espace</TableCell>
+              <TableCell align="right">Superficie</TableCell>
+              <TableCell align="right">Assis</TableCell>
+              <TableCell align="right">Debout</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            <TableRow
+            // sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+            >
+              <TableCell>Salle François 1er</TableCell>
+              <TableCell align="right">500 m²</TableCell>
+              <TableCell align="right">500</TableCell>
+              <TableCell align="right">450</TableCell>
+            </TableRow>
+            <TableRow
+              sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+            >
+              <TableCell>Salle Léonard de Vinci</TableCell>
+              <TableCell align="right">300 m²</TableCell>
+              <TableCell align="right">300</TableCell>
+              <TableCell align="right">200</TableCell>
             </TableRow>
           </TableBody>
         </Table>
@@ -93,7 +92,7 @@ export default function BasicTable() {
       <h6>Espaces groupés</h6>
       <TableContainer
         component={Paper}
-        className={styles.OurRoom_TableContainer}
+        className={styles.OurRoom_TableContainer_desktop}
         sx={{
           maxWidth: "80%",
           margin: "auto",
@@ -151,6 +150,55 @@ export default function BasicTable() {
           </TableBody>
         </Table>
       </TableContainer>
-    </div>
+      <TableContainer
+        component={Paper}
+        className={styles.OurRoom_TableContainer_mobile}
+        sx={{
+          maxWidth: "80%",
+          margin: "auto",
+        }}
+      >
+        <Table aria-label="simple table">
+          <TableHead>
+            <TableRow>
+              <TableCell>Espace</TableCell>
+              <TableCell align="right">Superficie</TableCell>
+              <TableCell align="right">Assis</TableCell>
+              <TableCell align="right">Debout</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            <TableRow>
+              <TableCell scope="row">
+                Salle François 1er + Caveau + Bar
+              </TableCell>
+              <TableCell align="right">650 m²</TableCell>
+              <TableCell align="right">650</TableCell>
+              <TableCell align="right">600</TableCell>
+            </TableRow>
+            <TableRow
+              sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+            >
+              <TableCell>
+                Salle François 1er + Caveau + Bar + Choiseul
+              </TableCell>
+              <TableCell align="right">1000 m²</TableCell>
+              <TableCell align="right">750</TableCell>
+              <TableCell align="right">700</TableCell>
+            </TableRow>
+            <TableRow
+              sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+            >
+              <TableCell component="th" scope="row">
+                L&apos;Ensemble des Salles
+              </TableCell>
+              <TableCell align="right">1000 m²</TableCell>
+              <TableCell align="right">1000</TableCell>
+              <TableCell align="right">1000</TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </section>
   );
 }

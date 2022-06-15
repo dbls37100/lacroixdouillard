@@ -7,6 +7,7 @@ import Banner from "../components/Banner";
 import Description from "../components/Description";
 import Photos from "../components/Photos";
 import OurRoom from "../components/OurRoom";
+import Restoration from "../components/Restoration";
 import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
 
@@ -62,22 +63,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main} style={{ scrollBehavior: "smooth" }}>
-        {/* <NextSeo
-          robotsProps={{
-            nosnippet: true,
-            notranslate: true,
-            noimageindex: true,
-            noarchive: true,
-            maxSnippet: -1,
-            maxImagePreview: "none",
-            maxVideoPreview: -1,
-          }}
-        /> */}
         <Navbar colorAfter={colorAfter} setColorAfter={setColorAfter} />
         <Banner />
         <Description />
         <Photos />
         <OurRoom />
+        <Restoration />
       </main>
 
       <footer className={styles.footer}>
