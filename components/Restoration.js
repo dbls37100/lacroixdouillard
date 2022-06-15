@@ -26,6 +26,7 @@ const Restoration = () => {
         <a
           href="https://www.hotelrestaurant-labonneetape.com/index.php/traiteur-amboise-37"
           target="_blank"
+          rel="noreferrer"
         >
           Découvrez notre traiteur
         </a>
@@ -33,7 +34,7 @@ const Restoration = () => {
       <h5>Nos clients</h5>
       <p>
         Val Touraine habitat , Sogarep , Edf , Relaxsens , Action enfance ,
-        Gaumont cinéma (tournage au château d'Amboise)
+        Gaumont cinéma (tournage au château d&apos;Amboise)
       </p>
     </section>
   );
