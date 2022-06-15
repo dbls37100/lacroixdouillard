@@ -17,10 +17,10 @@ const Restoration = () => {
         />
       </div>
       <p className={styles.Restoration_p_description}>
-        Besoin d'un traiteur ? Les Caves de la Croix Douillard peuvent vous
-        aider. Nous disposons d'un traiteur de qualité, suivant vos envies et
-        votre besoin. Si vous souhaitez plus d'information, ou un devis,
-        n'hésitez pas à nous contacter en cliquant sur le lien ci-dessous.
+        Besoin d&apos;un traiteur ? Les Caves de la Croix Douillard peuvent vous
+        aider. Nous disposons d&apos;un traiteur de qualité, suivant vos envies
+        et votre besoin. Si vous souhaitez plus d&apos;information, ou un devis,
+        n&apos;hésitez pas à nous contacter en cliquant sur le lien ci-dessous.
       </p>
       <button className={styles.Restoration_button}>
         <a
