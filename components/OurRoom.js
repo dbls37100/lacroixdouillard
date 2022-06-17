@@ -23,7 +23,14 @@ export default function BasicTable() {
         <Table aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell>Espace</TableCell>
+              <TableCell
+                style={{
+                  width: "20%",
+                  maxWidth: "20%",
+                }}
+              >
+                Espace
+              </TableCell>
               <TableCell align="right">Superficie</TableCell>
               <TableCell align="right">Cocktail</TableCell>
               <TableCell align="right">Conférence</TableCell>
@@ -34,20 +41,34 @@ export default function BasicTable() {
             <TableRow
             // sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
-              <TableCell>Salle François 1er</TableCell>
-              <TableCell align="right">500 m²</TableCell>
-              <TableCell align="right">500</TableCell>
-              <TableCell align="right">300</TableCell>
-              <TableCell align="right">450</TableCell>
+              <TableCell
+                style={{
+                  width: "20%",
+                  maxWidth: "20%",
+                }}
+              >
+                Salle François 1er
+              </TableCell>
+              <TableCell align="right">500 m²&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">500&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">300&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">450&nbsp;&nbsp;</TableCell>
             </TableRow>
             <TableRow
-              sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+            // sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
-              <TableCell>Salle Léonard de Vinci</TableCell>
-              <TableCell align="right">300 m²</TableCell>
-              <TableCell align="right">300</TableCell>
-              <TableCell align="right">150</TableCell>
-              <TableCell align="right">200</TableCell>
+              <TableCell
+                style={{
+                  width: "20%",
+                  maxWidth: "20%",
+                }}
+              >
+                Salle Léonard de Vinci
+              </TableCell>
+              <TableCell align="right">300 m²&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">300&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">150&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">200&nbsp;&nbsp;</TableCell>
             </TableRow>
           </TableBody>
         </Table>
@@ -63,7 +84,14 @@ export default function BasicTable() {
         <Table aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell>Espace</TableCell>
+              <TableCell
+                style={{
+                  width: "20%",
+                  maxWidth: "20%",
+                }}
+              >
+                Espace
+              </TableCell>
               <TableCell align="right">Superficie</TableCell>
               <TableCell align="right">Assis</TableCell>
               <TableCell align="right">Debout</TableCell>
@@ -73,18 +101,32 @@ export default function BasicTable() {
             <TableRow
             // sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
-              <TableCell>Salle François 1er</TableCell>
-              <TableCell align="right">500 m²</TableCell>
-              <TableCell align="right">500</TableCell>
-              <TableCell align="right">450</TableCell>
+              <TableCell
+                style={{
+                  width: "20%",
+                  maxWidth: "20%",
+                }}
+              >
+                Salle François 1er
+              </TableCell>
+              <TableCell align="right">500 m²&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">500&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">450&nbsp;&nbsp;</TableCell>
             </TableRow>
             <TableRow
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
-              <TableCell>Salle Léonard de Vinci</TableCell>
-              <TableCell align="right">300 m²</TableCell>
-              <TableCell align="right">300</TableCell>
-              <TableCell align="right">200</TableCell>
+              <TableCell
+                style={{
+                  width: "20%",
+                  maxWidth: "20%",
+                }}
+              >
+                Salle Léonard de Vinci
+              </TableCell>
+              <TableCell align="right">300 m²&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">300&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">200&nbsp;&nbsp;</TableCell>
             </TableRow>
           </TableBody>
         </Table>
@@ -101,7 +143,14 @@ export default function BasicTable() {
         <Table aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell>Espace</TableCell>
+              <TableCell
+                style={{
+                  width: "20%",
+                  maxWidth: "20%",
+                }}
+              >
+                Espace
+              </TableCell>
               <TableCell align="right">Superficie</TableCell>
               <TableCell align="right">Cocktail</TableCell>
               <TableCell align="right">Conférence</TableCell>
@@ -110,41 +159,56 @@ export default function BasicTable() {
           </TableHead>
           <TableBody>
             <TableRow>
-              <TableCell scope="row">
+              <TableCell
+                style={{
+                  width: "20%",
+                  maxWidth: "20%",
+                }}
+              >
                 Salle François 1er + Caveau + Bar
               </TableCell>
-              <TableCell align="right">650 m²</TableCell>
-              <TableCell align="right">650</TableCell>
+              <TableCell align="right">650 m²&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">650&nbsp;&nbsp;</TableCell>
               <TableCell align="right">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </TableCell>
-              <TableCell align="right">600</TableCell>
+              <TableCell align="right">600&nbsp;&nbsp;</TableCell>
             </TableRow>
             <TableRow
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
-              <TableCell>
+              <TableCell
+                style={{
+                  width: "20%",
+                  maxWidth: "20%",
+                }}
+              >
                 Salle François 1er + Caveau + Bar + Choiseul
               </TableCell>
-              <TableCell align="right">1000 m²</TableCell>
-              <TableCell align="right">750</TableCell>
+              <TableCell align="right">1000 m²&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">750&nbsp;&nbsp;</TableCell>
               <TableCell align="right">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </TableCell>
-              <TableCell align="right">700</TableCell>
+              <TableCell align="right">700&nbsp;&nbsp;</TableCell>
             </TableRow>
             <TableRow
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
-              <TableCell component="th" scope="row">
+              <TableCell
+                style={{
+                  width: "20%",
+                  maxWidth: "20%",
+                }}
+              >
                 L&apos;Ensemble des Salles
               </TableCell>
-              <TableCell align="right">1000 m²</TableCell>
-              <TableCell align="right">1000</TableCell>
+              <TableCell align="right">1000 m²&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">1000&nbsp;&nbsp;</TableCell>
               <TableCell align="right">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </TableCell>
-              <TableCell align="right">1000</TableCell>
+              <TableCell align="right">1000&nbsp;&nbsp;</TableCell>
               {/* <TableCell align="right">200</TableCell> */}
             </TableRow>
           </TableBody>
@@ -161,7 +225,14 @@ export default function BasicTable() {
         <Table aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell>Espace</TableCell>
+              <TableCell
+                style={{
+                  width: "20%",
+                  maxWidth: "20%",
+                }}
+              >
+                Espace
+              </TableCell>
               <TableCell align="right">Superficie</TableCell>
               <TableCell align="right">Assis</TableCell>
               <TableCell align="right">Debout</TableCell>
@@ -169,32 +240,47 @@ export default function BasicTable() {
           </TableHead>
           <TableBody>
             <TableRow>
-              <TableCell scope="row">
+              <TableCell
+                style={{
+                  width: "20%",
+                  maxWidth: "20%",
+                }}
+              >
                 Salle François 1er + Caveau + Bar
               </TableCell>
-              <TableCell align="right">650 m²</TableCell>
-              <TableCell align="right">650</TableCell>
-              <TableCell align="right">600</TableCell>
+              <TableCell align="right">650 m²&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">650&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">600&nbsp;&nbsp;</TableCell>
             </TableRow>
             <TableRow
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
-              <TableCell>
+              <TableCell
+                style={{
+                  width: "20%",
+                  maxWidth: "20%",
+                }}
+              >
                 Salle François 1er + Caveau + Bar + Choiseul
               </TableCell>
-              <TableCell align="right">1000 m²</TableCell>
-              <TableCell align="right">750</TableCell>
-              <TableCell align="right">700</TableCell>
+              <TableCell align="right">1000 m²&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">750&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">700&nbsp;&nbsp;</TableCell>
             </TableRow>
             <TableRow
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
-              <TableCell component="th" scope="row">
+              <TableCell
+                style={{
+                  width: "20%",
+                  maxWidth: "20%",
+                }}
+              >
                 L&apos;Ensemble des Salles
               </TableCell>
-              <TableCell align="right">1000 m²</TableCell>
-              <TableCell align="right">1000</TableCell>
-              <TableCell align="right">1000</TableCell>
+              <TableCell align="right">1000 m²&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">1000&nbsp;&nbsp;</TableCell>
+              <TableCell align="right">1000&nbsp;&nbsp;</TableCell>
             </TableRow>
           </TableBody>
         </Table>
