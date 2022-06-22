@@ -8,6 +8,7 @@ import Description from "../components/Description";
 import Photos from "../components/Photos";
 import OurRoom from "../components/OurRoom";
 import Restoration from "../components/Restoration";
+import Location from "../components/Location";
 import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
 
@@ -69,6 +70,7 @@ export default function Home() {
         <Photos />
         <OurRoom />
         <Restoration />
+        <Location />
       </main>
 
       <footer className={styles.footer}>

@@ -1,7 +1,6 @@
+import { useState } from "react";
 import styles from "../styles/components/Restoration.module.css";
 import Image from "next/image";
-import Link from "next/link";
-
 const Restoration = () => {
   return (
     <section className={styles.Restoration}>
