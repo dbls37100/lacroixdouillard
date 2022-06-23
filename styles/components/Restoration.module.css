@@ -1,7 +1,9 @@
 .Restoration {
-  margin: 5% 0 5% 0;
+  margin: 5% 0 0 0;
   width: 100%;
   text-align: center;
+  padding-bottom: 10%;
+  background: linear-gradient(white, white, white, white, beige, beige, white);
 }
 
 .Restoration_h5_title {
@@ -9,6 +11,7 @@
   font-weight: bold;
   margin-bottom: 2.5rem;
   text-align: center;
+  margin-bottom: 75px;
 }
 
 .Restoration_div_images {
@@ -40,18 +43,20 @@
   transform: translate(-50%, -50%); */
   /* width: 200px;
   height: 50px; */
-  background-color: beige;
+  background-color: white;
   border-radius: 5px;
   font-size: 1rem;
   color: #000;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  border: 0.4px solid #000;
+  box-shadow: outset(white);
+  border: none;
   padding: 0.5rem;
   /* outline:  */
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
   margin-top: 2rem;
+  margin-bottom: 30px;
 }
 
 .Restoration_image {

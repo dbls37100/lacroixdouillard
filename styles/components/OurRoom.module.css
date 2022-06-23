@@ -1,5 +1,5 @@
 .OurRoom {
-  margin: 5% 0 5% 0;
+  margin: 10% 0 5% 0;
   width: 100%;
   text-align: center;
   background: linear-gradient(white, white, beige, beige, beige, white);
@@ -46,6 +46,9 @@
 }
 
 @media (max-width: 600px) {
+  .OurRoom {
+    margin: 20% 0 5% 0;
+  }
   .OurRoom_TableContainer_desktop {
     display: none;
   }
@@ -57,7 +60,7 @@
     max-width: 90%;
     height: 100%;
     margin: auto;
-    margin-bottom: 5%;
+    margin-bottom: 20%;
   }
   .OurRoom_TableCell_Desktop_View {
     display: none;
