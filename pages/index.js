@@ -9,6 +9,7 @@ import Photos from "../components/Photos";
 import OurRoom from "../components/OurRoom";
 import Restoration from "../components/Restoration";
 import Location from "../components/Location";
+import AdditionalBenefit from "../components/AdditionalBenefit";
 import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
 
@@ -69,6 +70,7 @@ export default function Home() {
         <Description />
         <Photos />
         <OurRoom />
+        <AdditionalBenefit />
         <Restoration />
         <Location />
       </main>

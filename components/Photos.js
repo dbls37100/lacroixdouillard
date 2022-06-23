@@ -24,7 +24,7 @@ export default function QuiltedImageList() {
   }
 
   return (
-    <section id="Photos">
+    <section id="Photos" className={styles.Photos}>
       <h5 className={styles.Photos_h5_title}>Nos photos</h5>
       <ImageList
         sx={{ width: "90%", height: "auto", margin: "0 auto" }}

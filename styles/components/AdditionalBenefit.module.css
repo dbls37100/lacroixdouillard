@@ -1,0 +1,78 @@
+.AdditionalBenefit {
+  width: 100%;
+  min-width: 100%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.AdditionalBenefit_h3_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+
+.AdditionalBenefit_div_blockItem {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.AdditionalBenefit_div_itemCard {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 5%;
+  border: 1px black gray;
+  background-color: beige;
+  border-radius: 7%;
+  height: 150px;
+}
+
+.AdditionalBenefit_div_wrapperImage {
+  display: flex;
+  justify-content: flex-start;
+  height: 50%;
+}
+
+.AdditionalBenefit_div_image {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.Photos_image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  align-self: start;
+}
+
+.AdditionalBenefit_p_texItem {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .AdditionalBenefit_div_blockItem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: top;
+    width: 80%;
+    margin: auto;
+  }
+}

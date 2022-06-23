@@ -1,13 +1,26 @@
 .Description {
+  padding-top: 50px;
   width: 100%;
   min-width: 100%;
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
+  padding-bottom: 10%;
   text-align: center;
+  background: linear-gradient(
+    beige,
+    beige,
+    beige,
+    beige,
+    beige,
+    beige,
+    beige,
+    white
+  );
 }
 
 .Description_p {
+  padding-top: 5%;
   width: 80%;
   min-width: 80%;
   font-size: 1.1rem;
