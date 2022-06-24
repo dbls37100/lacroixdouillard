@@ -4,7 +4,7 @@ import Image from "next/image";
 const AdditionalBenefit = () => {
   return (
     <section className={styles.AdditionalBenefit}>
-      <h3 className={styles.AdditionalBenefit_h3_title}>Les petits +</h3>
+      <h3>Les petits +</h3>
       <div className={styles.AdditionalBenefit_div_blockItem}>
         <div className={styles.AdditionalBenefit_div_itemCard}>
           <div className={styles.AdditionalBenefit_div_wrapperImage}>

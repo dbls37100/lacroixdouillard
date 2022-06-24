@@ -4,7 +4,7 @@ import Image from "next/image";
 const Restoration = () => {
   return (
     <section className={styles.Restoration}>
-      <h5 className={styles.Restoration_h5_title}>Restauration</h5>
+      <h3>Restauration</h3>
       <div className={styles.Restoration_div_images}>
         <Image
           src="/traiteur.jpg"

@@ -11,7 +11,7 @@ import styles from "../styles/components/OurRoom.module.css";
 export default function BasicTable() {
   return (
     <section id="OurRoom" className={styles.OurRoom}>
-      <h5 className={styles.OurRoom_h5_title}>Salles & espaces</h5>
+      <h3>Salles & espaces</h3>
       <TableContainer
         component={Paper}
         className={styles.OurRoom_TableContainer_desktop}

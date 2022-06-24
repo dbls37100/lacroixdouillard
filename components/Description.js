@@ -13,7 +13,7 @@ const Description = () => {
         plus grandes envergures pouvant ainsi accueillir 1000 personnes. Ce
         décor hors du commun fera de votre évènement un moment inoubliable.
       </p> */}
-      <h2>Les Caves de la croix Douillard, qu&apos;est ce que c&apos;est ? </h2>
+      <h3>Les Caves de la croix Douillard, qu&apos;est ce que c&apos;est ? </h3>
       {/* <Image
         src="/unesco.jpg"
         alt="description"
@@ -29,11 +29,7 @@ const Description = () => {
         vous invite à entrer dans ce décor agréable et inhabituel, elles ont été
         aménagées pour offrir un espace de réception dans un cadre exceptionnel
         et chaleureux. Leur caractère pittoresque se prête au jeu de nombreuses
-        mises en scène et invite à l&apos;insolite. Offrant un espace de
-        réception de 50 à 1000 personnes sur 1800 m² modulable et réparti en
-        plusieurs salles, elles sont largement pourvues en espace cuisine pour
-        les traiteurs, en vestiaires et sanitaires, ainsi qu&apos;un parking en
-        conséquence.
+        mises en scène et invite à l&apos;insolite.
       </p>
     </section>
   );

@@ -7,11 +7,9 @@ const Banner = () => {
       <div className={styles.Banner_div_text_Invisible}></div>
       <div className={styles.Banner_div_text}>
         <h1 className={styles.Banner_text}>
-          {/* <span> */}
           Bienvenue aux Caves de la Croix Douillard
-          {/* </span> */}
         </h1>
-        <p className={styles.Banner_text}>
+        <p className={styles.Banner_text1}>
           La Cave de la Croix Douillard vous accueille dans sa salle de
           réception au décor atypique et soigné pour organiser tous vos
           évènements.

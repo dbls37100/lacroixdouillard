@@ -22,6 +22,10 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Old+Standard+TT&family=Open+Sans:wght@300&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
+          rel="stylesheet"
+        />
         <meta charSet="utf-8" />
       </Head>
       <body>
