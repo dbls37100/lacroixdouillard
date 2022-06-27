@@ -1,5 +1,5 @@
 import styles from "../styles/components/location.module.css";
-import Maps from "./Maps";
+// import Maps from "./Maps";
 
 const Location = () => {
   return (
@@ -9,7 +9,11 @@ const Location = () => {
         <h5>Adresse</h5>
         <p>510 Quai des Violettes, 37400 Amboise</p>
       </div>
-      <Maps />
+      <iframe
+        width="500"
+        height="300"
+        src="https://api.maptiler.com/maps/c795e896-f66d-42ab-a214-abfcd5d06276/?key=BMUKDpp6B2okBlMX42LJ#15.6/47.42265/1.00550"
+      ></iframe>
     </div>
   );
 };
