@@ -1,10 +1,25 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import styles from "../styles/components/Restoration.module.css";
 import Image from "next/image";
+import { Parallax } from "react-scroll-parallax";
 const Restoration = () => {
+  const [entered, setEntered] = useState(false);
   return (
     <section className={styles.Restoration}>
-      <h3>Restauration</h3>
+      <Parallax
+        // onProgressChange={(progress) => setProgress(progress)}
+        onEnter={() => setEntered(true)}
+        onExit={() => setEntered(false)}
+      />
+      <h3
+        className={
+          entered === true
+            ? styles.OurRoom_h5_title
+            : styles.OurRoom_h5_title_normal
+        }
+      >
+        Restauration
+      </h3>
       <div className={styles.Restoration_div_images}>
         <Image
           src="/traiteur.jpg"

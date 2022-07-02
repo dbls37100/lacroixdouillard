@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -7,11 +7,31 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import styles from "../styles/components/OurRoom.module.css";
+import { Parallax } from "react-scroll-parallax";
 
 export default function BasicTable() {
+  const [entered, setEntered] = useState(false);
+
+  // useEffect(() => {
+  //   console.log("il ce passe un truc");
+  // }, [entered]);
+
   return (
     <section id="OurRoom" className={styles.OurRoom}>
-      <h3>Salles & espaces</h3>
+      <h3
+        className={
+          entered === true
+            ? styles.OurRoom_h5_title
+            : styles.OurRoom_h5_title_normal
+        }
+      >
+        Salles & espaces
+      </h3>
+      <Parallax
+        // onProgressChange={(progress) => setProgress(progress)}
+        onEnter={() => setEntered(true)}
+        onExit={() => setEntered(false)}
+      />
       <TableContainer
         component={Paper}
         className={styles.OurRoom_TableContainer_desktop}
@@ -75,7 +95,11 @@ export default function BasicTable() {
       </TableContainer>
       <TableContainer
         component={Paper}
-        className={styles.OurRoom_TableContainer_mobile}
+        className={
+          entered
+            ? styles.OurRoom_TableContainer_mobile
+            : styles.hidden_class_mobile
+        }
         sx={{
           maxWidth: "80%",
           margin: "auto",
@@ -134,7 +158,11 @@ export default function BasicTable() {
       <h6>Espaces groupés</h6>
       <TableContainer
         component={Paper}
-        className={styles.OurRoom_TableContainer_desktop}
+        className={
+          entered
+            ? styles.OurRoom_TableContainer_desktop
+            : styles.hidden_class_desktop
+        }
         sx={{
           maxWidth: "80%",
           margin: "auto",
@@ -216,7 +244,11 @@ export default function BasicTable() {
       </TableContainer>
       <TableContainer
         component={Paper}
-        className={styles.OurRoom_TableContainer_mobile}
+        className={
+          entered
+            ? styles.OurRoom_TableContainer_mobile
+            : styles.hidden_class_mobile
+        }
         sx={{
           maxWidth: "80%",
           margin: "auto",

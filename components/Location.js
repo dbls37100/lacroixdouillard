@@ -1,10 +1,26 @@
+import React, { useState } from "react";
 import styles from "../styles/components/location.module.css";
+import { Parallax } from "react-scroll-parallax";
 // import Maps from "./Maps";
 
 const Location = () => {
+  const [entered, setEntered] = useState(false);
   return (
     <div className={styles.Location}>
-      <h3>Ou nous trouver</h3>
+      <h3
+        className={
+          entered === true
+            ? styles.OurRoom_h5_title
+            : styles.OurRoom_h5_title_normal
+        }
+      >
+        Ou nous trouver
+      </h3>
+      <Parallax
+        // onProgressChange={(progress) => setProgress(progress)}
+        onEnter={() => setEntered(true)}
+        onExit={() => setEntered(false)}
+      />
       <div>
         <h5>Adresse</h5>
         <p>510 Quai des Violettes, 37400 Amboise</p>

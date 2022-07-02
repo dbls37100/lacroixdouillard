@@ -5,7 +5,7 @@ import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import ImageModal from "../components/ImageModal";
 import styles from "../styles/components/Photos.module.css";
-
+import { Parallax } from "react-scroll-parallax";
 function srcset(image, size, rows = 1, cols = 1) {
   return {
     src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
@@ -18,6 +18,7 @@ function srcset(image, size, rows = 1, cols = 1) {
 export default function QuiltedImageList() {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
+  const [entered, setEntered] = useState(false);
   async function handleOpen(index) {
     await setIndex(index);
     setOpen(true);
@@ -25,7 +26,20 @@ export default function QuiltedImageList() {
 
   return (
     <section id="Photos" className={styles.Photos}>
-      <h3>Nos photos</h3>
+      <h3
+        className={
+          entered === true
+            ? styles.Photos_h5_title
+            : styles.Photos_h5_title_normal
+        }
+      >
+        Nos photos
+      </h3>
+      <Parallax
+        // onProgressChange={(progress) => setProgress(progress)}
+        onEnter={() => setEntered(true)}
+        onExit={() => setEntered(false)}
+      />
       <ImageList
         sx={{ width: "90%", height: "auto", margin: "5% auto 0 auto" }}
         variant="quilted"

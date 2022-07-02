@@ -13,11 +13,16 @@
   background: linear-gradient(white, white, beige, beige, beige, white);
 }
 
-.Location_h5_title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 25px;
+.OurRoom_h5_title {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  visibility: visible;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.OurRoom_h5_title_normal {
+  visibility: hidden;
+  margin-bottom: 2.5rem;
 }
 
 .Location_iFrame_desktop {
@@ -57,5 +62,16 @@
     margin-top: 50px;
     margin-bottom: 20%;
     background: linear-gradient(white, white, beige, beige, beige, white);
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
   }
 }

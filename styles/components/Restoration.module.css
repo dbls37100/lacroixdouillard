@@ -6,12 +6,16 @@
   background: linear-gradient(white, white, white, white, beige, beige, white);
 }
 
-.Restoration_h5_title {
-  font-size: 1.5rem;
-  font-weight: bold;
+.OurRoom_h5_title {
+  width: 100%;
   margin-bottom: 2.5rem;
-  text-align: center;
-  margin-bottom: 75px;
+  visibility: visible;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.OurRoom_h5_title_normal {
+  visibility: hidden;
+  margin-bottom: 2.5rem;
 }
 
 .Restoration_div_images {
@@ -70,4 +74,30 @@
   height: 250;
   margin: auto;
   cursor: pointer; */
+}
+
+@keyframes tracking-in-contract-bck-bottom {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(400px) translateY(300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
 }

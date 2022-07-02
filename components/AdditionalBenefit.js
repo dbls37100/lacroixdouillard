@@ -1,10 +1,26 @@
+import React, { useState } from "react";
+import { Parallax } from "react-scroll-parallax";
 import styles from "../styles/components/AdditionalBenefit.module.css";
 import Image from "next/image";
 
 const AdditionalBenefit = () => {
+  const [entered, setEntered] = useState(false);
   return (
     <section className={styles.AdditionalBenefit}>
-      <h3>Les petits +</h3>
+      <h3
+        className={
+          entered === true
+            ? styles.OurRoom_h5_title
+            : styles.OurRoom_h5_title_normal
+        }
+      >
+        Les petits +
+      </h3>
+      <Parallax
+        // onProgressChange={(progress) => setProgress(progress)}
+        onEnter={() => setEntered(true)}
+        onExit={() => setEntered(false)}
+      />
       <div className={styles.AdditionalBenefit_div_blockItem}>
         <div className={styles.AdditionalBenefit_div_itemCard}>
           <div className={styles.AdditionalBenefit_div_wrapperImage}>

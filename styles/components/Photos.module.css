@@ -10,10 +10,18 @@
 }
 
 .Photos_h5_title {
-  font-size: 1.5rem;
-  font-weight: bold;
+  /* font-size: 1.5rem;
+  font-weight: bold; */
   margin-bottom: 2.5rem;
-  text-align: center;
+  visibility: visible;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.Photos_h5_title_normal {
+  /* font-size: 1.5rem;
+  font-weight: bold; */
+  visibility: hidden;
+  margin-bottom: 2.5rem;
 }
 
 .Photos_image:hover {
@@ -123,5 +131,16 @@
     width: 90%;
     height: 85%;
     margin: auto;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
   }
 }
