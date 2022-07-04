@@ -155,7 +155,7 @@ export default function BasicTable() {
           </TableBody>
         </Table>
       </TableContainer>
-      <h6>Espaces groupés</h6>
+      <h4>Espaces groupés</h4>
       <TableContainer
         component={Paper}
         className={

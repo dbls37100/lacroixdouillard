@@ -80,8 +80,9 @@ const Navbar = ({ colorAfter, setColorAfter }) => {
                 src="/logo.png"
                 id="logo"
                 alt="logo"
-                width={width}
-                height={height}
+                layout="fixed"
+                width={65}
+                height={65}
                 className={
                   !colorAfter ? styles.Navbar_logo : styles.Navbar_logo2
                 }

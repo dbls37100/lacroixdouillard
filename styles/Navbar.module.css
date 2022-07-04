@@ -124,6 +124,8 @@
 .Navbar_logo {
   margin: 10px;
   margin-left: 20px;
+  height: 65;
+  width: 65;
   padding: 5px;
   background-color: beige;
   border-radius: 30%;
@@ -133,6 +135,8 @@
   margin: 10px;
   margin-left: 20px;
   padding: 5px;
+  height: 65;
+  width: 65;
   background-color: transparent;
   border-radius: 10%;
 }

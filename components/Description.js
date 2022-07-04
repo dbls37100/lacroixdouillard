@@ -13,7 +13,7 @@ const Description = () => {
         plus grandes envergures pouvant ainsi accueillir 1000 personnes. Ce
         décor hors du commun fera de votre évènement un moment inoubliable.
       </p> */}
-      <h3>Les Caves de la croix Douillard, qu&apos;est ce que c&apos;est ? </h3>
+      <h2>Les Caves de la croix Douillard, qu&apos;est ce que c&apos;est ? </h2>
       {/* <Image
         src="/unesco.jpg"
         alt="description"

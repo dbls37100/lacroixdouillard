@@ -45,6 +45,11 @@
   margin-left: 0.5rem;
 }
 
+.footer_logo_description {
+  width: 50;
+  height: 50;
+}
+
 @media (max-width: 600px) {
   /* .grid {
     width: 100%;

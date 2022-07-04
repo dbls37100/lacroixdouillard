@@ -31,7 +31,7 @@ const Location = () => {
           height="300"
           src="https://api.maptiler.com/maps/c795e896-f66d-42ab-a214-abfcd5d06276/?key=BMUKDpp6B2okBlMX42LJ#15.6/47.42265/1.00550"
         ></iframe> */}
-        <Maps />
+        {/* <Maps /> */}
       </div>
       <div className={styles.Location_iFrame_desktop}>
         {/* <iframe
@@ -39,7 +39,7 @@ const Location = () => {
           height="500"
           src="https://api.maptiler.com/maps/c795e896-f66d-42ab-a214-abfcd5d06276/?key=BMUKDpp6B2okBlMX42LJ#15.6/47.42265/1.00550"
         ></iframe> */}
-        <Maps />
+        {/* <Maps /> */}
       </div>
     </div>
   );
