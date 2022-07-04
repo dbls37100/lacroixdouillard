@@ -9,11 +9,11 @@ export default function Document() {
           name="application-name"
           content="Les caves de la Croix Douillars"
         /> */}
-        <meta name="title" content="Les Caves de la croix Douillard" />
+        {/* <meta name="title" content="Les Caves de la croix Douillard" />
         <meta
           name="description"
           content="Salle à louer situé à Amboise pour mariage, anniversaire, séminaire ou tout autre évenements"
-        />
+        /> */}
         <meta
           name="google-site-verification"
           content="ca7u7GMXe6n3aqnzsFOyf9iwVOHG6NAMCHPZVeut2bI"
@@ -22,7 +22,7 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         {/* <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Old+Standard+TT&family=Open+Sans:wght@300&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
           rel="stylesheet"
         />
         <link

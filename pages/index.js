@@ -26,20 +26,18 @@ export default function Home() {
   useEffect(() => {
     // navbar.style.color = "white";
     console.log("index");
-    window.addEventListener("scroll", () => {
-      const navbar = document.getElementById("navbar");
-      if (router.pathname !== "/contact" && window.scrollY > 500) {
-        // navbar.style.backgroundColor = "white";
-        // navbar.style.color = "black";
-        // navbar.style.height = "15vh";
-        setColorAfter(true);
-      } else if (router.pathname !== "/contact" && window.scrollY < 500) {
-        setColorAfter(false);
-        // navbar.style.backgroundColor = "rgba(0,0,0,0)";
-        // navbar.style.height = "20vh";
-        // navbar.style.color = "white";
-      }
-    });
+    window.addEventListener(
+      "scroll",
+      () => {
+        const navbar = document.getElementById("navbar");
+        if (router.pathname !== "/contact" && window.scrollY > 500) {
+          setColorAfter(true);
+        } else if (router.pathname !== "/contact" && window.scrollY < 500) {
+          setColorAfter(false);
+        }
+      },
+      { passive: true }
+    );
   }, [router.pathname]);
 
   const scrollToTop = () => {
