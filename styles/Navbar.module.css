@@ -296,6 +296,10 @@
   margin-left: 2%;
 }
 
+.Navbar_div_menu {
+  margin-right: 3%;
+}
+
 .Navbar_div_menu_mobile_content {
   display: none;
 }

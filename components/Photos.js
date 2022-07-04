@@ -84,61 +84,65 @@ export default function QuiltedImageList() {
 
 const itemData = [
   {
-    img: "/photo.jpg",
-    title: "Breakfast",
+    img: "/photo.jpeg",
+    title: "Evenements de mariage à la croix Douillard à Amboise",
     rows: 2,
     cols: 2,
     priority: 40,
   },
   {
     img: "/photo4.jpg",
-    title: "Burger",
+    title:
+      "Entrée des caves de la croix douillard à Amboise, ouvert pour tout evenements",
     priority: 40,
   },
   {
     img: "/photo3.jpg",
-    title: "Camera",
+    title:
+      "Bar des Caves de la croix douillard à Amboise, venez reserver pour votre evenement",
     priority: 40,
   },
   {
-    img: "/photo2.jpg",
-    title: "Coffee",
+    img: "/photo2.jpeg",
+    title:
+      "Soirée mariage, au caves de la croix douillard, venez feter un anniversaire, un mariage ou tout autres evenement aux Caves de la croix Douillard",
     cols: 2,
     priority: 40,
   },
   {
     img: "/photo5.jpg",
-    title: "Hats",
+    title: "Dispositions des salles aux Caves de la Croix Douillard à Amboise",
     cols: 2,
     priority: 40,
   },
   {
     img: "/photo6.jpg",
     title: "Honey",
-    author: "@arwinneil",
+    author: "Banquet apéritif aux Caves de la Croix Douillard à Amboise",
     rows: 2,
     cols: 2,
     priority: 40,
   },
   {
     img: "/photo7.jpg",
-    title: "Basketball",
+    title:
+      "Salle complete pendant un evenement aux Caves de la croix Douillard à Amboise",
     priority: 40,
   },
   {
     img: "/photo8.jpg",
-    title: "Fern",
+    title: "Dispositions des salles aux Caves de la Croix Douillard à Amboise",
     priority: 40,
   },
   {
     img: "/photo10.jpg",
-    title: "Mushrooms",
+    title: "Dispositions des salles aux Caves de la Croix Douillard à Amboise",
     rows: 2,
     priority: 40,
   },
   {
     img: "/photo9.jpg",
-    title: "Tomato basil",
+    title: "Dispositions des salles aux Caves de la Croix Douillard à Amboise",
     priority: 40,
   },
   // {

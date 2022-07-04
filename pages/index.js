@@ -53,15 +53,16 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Les Caves de la croix Douillard</title>
-        <meta name="description" content="Votre lieux de fetes à amboise" />
+        <meta
+          name="description"
+          content="Salle à louer situé à Amboise pour mariage, anniversaire, séminaire ou tout autre évenements"
+        />
+        <meta name="title" content="Les Caves de la croix Douillard" />
         <meta
           name="google-site-verification"
           content="ca7u7GMXe6n3aqnzsFOyf9iwVOHG6NAMCHPZVeut2bI"
         />
         <link rel="icon" href="/favicon.ico" />
-        <meta name="robots" content="index" />
-        <meta name="robots" content="follow" />
-        <meta name="robots" content="all" />
       </Head>
 
       <main className={styles.main} style={{ scrollBehavior: "smooth" }}>
@@ -77,10 +78,10 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <div className={styles.footer_div_description}>
-          <p>Les Caves de la Croix Douillard</p>
           <span className={styles.logo}>
-            <Image src="/logo.png" alt="Vercel Logo" width={25} height={25} />
+            <Image src="/logo.png" alt="Vercel Logo" width={50} height={50} />
           </span>
+          <p>Les Caves de la Croix Douillard</p>
         </div>
         <div className={styles.footer_div_footer}>
           <p>

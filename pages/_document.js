@@ -5,12 +5,15 @@ export default function Document() {
       <Head>
         <meta charSet="utf-8" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta
+        {/* <meta
           name="application-name"
           content="Les caves de la Croix Douillars"
-        />
+        /> */}
         <meta name="title" content="Les Caves de la croix Douillard" />
-        <meta name="description" content="Les Caves de la croix Douillard" />
+        <meta
+          name="description"
+          content="Salle à louer situé à Amboise pour mariage, anniversaire, séminaire ou tout autre évenements"
+        />
         <meta
           name="google-site-verification"
           content="ca7u7GMXe6n3aqnzsFOyf9iwVOHG6NAMCHPZVeut2bI"

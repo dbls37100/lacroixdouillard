@@ -126,7 +126,11 @@ const Contact = () => {
     <div className={styles.container}>
       <Head>
         <title>Les caves de la croix douillard</title>
-        <meta name="description" content="Contact de la croix douillard" />
+        <meta name="title" content="Les Caves de la croix Douillard" />
+        <meta
+          name="description"
+          content="Salle à louer situé à Amboise pour mariage, anniversaire, séminaire ou tout autre évenements"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>

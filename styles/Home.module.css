@@ -28,6 +28,7 @@
 
 .footer_div_description {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -36,10 +37,11 @@
 
 .footer_div_footer {
   margin: 0;
+  font-size: small;
 }
 
 .logo {
-  height: 1em;
+  height: 4em;
   margin-left: 0.5rem;
 }
 
@@ -48,4 +50,8 @@
     width: 100%;
     flex-direction: column;
   } */
+  .footer_div_footer {
+    margin: 0;
+    font-size: x-small;
+  }
 }
