@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import Image from "next/image";
-import Typography from "@mui/material/Typography";
 import ImageModal from "../components/ImageModal";
 import styles from "../styles/components/Photos.module.css";
 import { Parallax } from "react-scroll-parallax";

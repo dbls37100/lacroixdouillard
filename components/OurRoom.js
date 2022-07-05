@@ -5,7 +5,6 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
 import styles from "../styles/components/OurRoom.module.css";
 import { Parallax } from "react-scroll-parallax";
 
@@ -33,7 +32,6 @@ export default function BasicTable() {
         onExit={() => setEntered(false)}
       />
       <TableContainer
-        component={Paper}
         className={styles.OurRoom_TableContainer_desktop}
         sx={{
           maxWidth: "80%",
@@ -94,7 +92,6 @@ export default function BasicTable() {
         </Table>
       </TableContainer>
       <TableContainer
-        component={Paper}
         className={
           entered
             ? styles.OurRoom_TableContainer_mobile
@@ -157,7 +154,6 @@ export default function BasicTable() {
       </TableContainer>
       <h4>Espaces groupés</h4>
       <TableContainer
-        component={Paper}
         className={
           entered
             ? styles.OurRoom_TableContainer_desktop
@@ -243,7 +239,6 @@ export default function BasicTable() {
         </Table>
       </TableContainer>
       <TableContainer
-        component={Paper}
         className={
           entered
             ? styles.OurRoom_TableContainer_mobile

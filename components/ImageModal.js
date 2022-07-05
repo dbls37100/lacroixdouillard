@@ -1,15 +1,15 @@
 import * as React from "react";
 import Image from "next/image";
-import Backdrop from "@mui/material/Backdrop";
-import Box from "@mui/material/Box";
+// import Backdrop from "@mui/material/Backdrop";
+// import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
+// import CardActions from "@mui/material/CardActions";
+// import CardContent from "@mui/material/CardContent";
+// import CardMedia from "@mui/material/CardMedia";
+// import Typography from "@mui/material/Typography";
 import styles from "../styles/components/Photos.module.css";
 
 // const style = {
@@ -60,7 +60,7 @@ const TransitionsModal = ({
         onClose={handleClose}
         closeAfterTransition
         className={styles.ImageModal_modal}
-        BackdropComponent={Backdrop}
+        // BackdropComponent={Backdrop}
         BackdropProps={{
           timeout: 500,
         }}

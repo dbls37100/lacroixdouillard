@@ -20,6 +20,10 @@ export default function Document() {
 
         {/* <link rel="preconnect" href="https://fonts.googleapis.com" /> */}
         {/* <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> */}
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        {/* <style data-href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Alex+Brush&display=swap">
+        
+        </style> */}
         <link
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Alex+Brush&display=swap"
           rel="stylesheet"

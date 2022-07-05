@@ -113,14 +113,6 @@ const Contact = () => {
 
   useEffect(() => {
     setColorAfter(false);
-    // window.addEventListener("scroll", () => {
-    //   const navbar = document.getElementById("navbar");
-    //   // navbar.classList.add("navbar_scrolled");
-    //   // navbar.style.backgroundColor = "white";
-    //   // navbar.style.color = "black";
-    //   // navbar.style.height = "15vh";
-    //   setColorAfter(false);
-    // });
   }, []);
   return (
     <div className={styles.container}>
@@ -188,8 +180,6 @@ const Contact = () => {
                 className={styles.Contact_input}
                 type="date"
                 placeholder="Date"
-                // onFocus={(e) => (e.target.type = "date")}
-                // onBlur={(e) => (e.target.type = "text")}
                 id="Date"
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
@@ -230,16 +220,24 @@ const Contact = () => {
         </Snackbar>
       </main>
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
+        <div className={styles.footer_div_description}>
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image
+              src="/logo.png"
+              className={styles.footer_logo_description}
+              alt="Vercel Logo"
+              width={50}
+              height={50}
+            />
           </span>
-        </a>
+          <p>Les Caves de la Croix Douillard</p>
+        </div>
+        <div className={styles.footer_div_footer}>
+          <p>
+            Copyright © 2022 Les Caves de la Croix Douillard. Tout droit
+            réservé.
+          </p>
+        </div>
       </footer>
     </div>
   );
