@@ -39,5 +39,10 @@ module.exports = withPlugins([
       },
     },
   ],
+  {
+    images: {
+      domains: ["https://api.maptiler.com"],
+    },
+  },
   nextConfig,
 ]);

@@ -24,8 +24,6 @@ export default function Home() {
   // function for detect scroll changement and change color
 
   useEffect(() => {
-    // navbar.style.color = "white";
-    console.log("index");
     window.addEventListener(
       "scroll",
       () => {
