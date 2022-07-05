@@ -131,8 +131,9 @@ const Contact = () => {
           <div className={styles.Contact_div_description}>
             <h2 className={styles.Contact_h2_title}>Contact</h2>
             <p className={styles.Contact_p_text}>
-              N'hésitez pas as nous contacter via ce formulaire, nous vous
-              répondrons au plus vite
+              N&apos;hésitez pas as nous contacter via ce formulaire, nous vous
+              répondrons au plus vite à toutes vos questions sur votre adresse
+              mail, ou par téléphone.
             </p>
           </div>
           <form onSubmit={sendEmail} className={styles.Contact_div_form}>
