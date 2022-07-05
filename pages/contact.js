@@ -117,11 +117,11 @@ const Contact = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Les caves de la croix douillard</title>
-        <meta name="title" content="Les Caves de la croix Douillard" />
+        <title>Contact | Les Caves de la Croix Douillard</title>
+
         <meta
           name="description"
-          content="Salle à louer situé à Amboise pour mariage, anniversaire, séminaire ou tout autre évenements"
+          content="Contactez les Caves de la Croix Douillard ou demandais un devis directement sur le site, salle de reception située à Amboise."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -131,8 +131,8 @@ const Contact = () => {
           <div className={styles.Contact_div_description}>
             <h2 className={styles.Contact_h2_title}>Contact</h2>
             <p className={styles.Contact_p_text}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates, quisquam.
+              N'hésitez pas as nous contacter via ce formulaire, nous vous
+              répondrons au plus vite
             </p>
           </div>
           <form onSubmit={sendEmail} className={styles.Contact_div_form}>
