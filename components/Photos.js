@@ -4,10 +4,20 @@ import ImageListItem from "@mui/material/ImageListItem";
 import Image from "next/image";
 import ImageModal from "../components/ImageModal";
 import styles from "../styles/components/Photos.module.css";
+import photo from "/public/photo.webp";
+import photo2 from "/public/photo2.webp";
+import photo3 from "/public/photo3.webp";
+import photo4 from "/public/photo4.webp";
+import photo5 from "/public/photo5.webp";
+import photo6 from "/public/photo6.webp";
+import photo7 from "/public/photo7.webp";
+import photo8 from "/public/photo8.webp";
+import photo9 from "/public/photo9.webp";
+import photo10 from "/public/photo10.webp";
 import { Parallax } from "react-scroll-parallax";
 function srcset(image, size, rows = 1, cols = 1) {
   return {
-    src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
+    src: image,
     srcSet: `${image}?w=${size * cols}&h=${
       size * rows
     }&fit=crop&auto=format&dpr=2 2x`,
@@ -83,39 +93,39 @@ export default function QuiltedImageList() {
 
 const itemData = [
   {
-    img: "/photo.webp",
+    img: photo,
     title: "Evenements de mariage à la croix Douillard à Amboise",
     rows: 2,
     cols: 2,
     priority: 40,
   },
   {
-    img: "/photo4.webp",
+    img: photo4,
     title:
       "Entrée des caves de la croix douillard à Amboise, ouvert pour tout evenements",
     priority: 40,
   },
   {
-    img: "/photo3.webp",
+    img: photo3,
     title:
       "Bar des Caves de la croix douillard à Amboise, venez reserver pour votre evenement",
     priority: 40,
   },
   {
-    img: "/photo2.webp",
+    img: photo2,
     title:
       "Soirée mariage, au caves de la croix douillard, venez feter un anniversaire, un mariage ou tout autres evenement aux Caves de la croix Douillard",
     cols: 2,
     priority: 40,
   },
   {
-    img: "/photo5.webp",
+    img: photo5,
     title: "Dispositions des salles aux Caves de la Croix Douillard à Amboise",
     cols: 2,
     priority: 40,
   },
   {
-    img: "/photo6.webp",
+    img: photo6,
     title: "Honey",
     author: "Banquet apéritif aux Caves de la Croix Douillard à Amboise",
     rows: 2,
@@ -123,24 +133,24 @@ const itemData = [
     priority: 40,
   },
   {
-    img: "/photo7.webp",
+    img: photo7,
     title:
       "Salle complete pendant un evenement aux Caves de la croix Douillard à Amboise",
     priority: 40,
   },
   {
-    img: "/photo8.webp",
+    img: photo8,
     title: "Dispositions des salles aux Caves de la Croix Douillard à Amboise",
     priority: 40,
   },
   {
-    img: "/photo10.webp",
+    img: photo10,
     title: "Dispositions des salles aux Caves de la Croix Douillard à Amboise",
     rows: 2,
     priority: 40,
   },
   {
-    img: "/photo9.webp",
+    img: photo9,
     title: "Dispositions des salles aux Caves de la Croix Douillard à Amboise",
     priority: 40,
   },

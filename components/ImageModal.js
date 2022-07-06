@@ -10,8 +10,9 @@ import Card from "@mui/material/Card";
 // import CardContent from "@mui/material/CardContent";
 // import CardMedia from "@mui/material/CardMedia";
 // import Typography from "@mui/material/Typography";
+import previous from "/public/left-arrow.png";
+import next from "/public/right-arrow.png";
 import styles from "../styles/components/Photos.module.css";
-// import Previous from "../assets2/previous.svg";
 
 // const style = {
 //   position: "absolute",
@@ -88,7 +89,7 @@ const TransitionsModal = ({
                 <div>
                   <div className={styles.Photos_button}>
                     <Image
-                      src="/assets2/previous.svg"
+                      src={previous}
                       alt="Previous"
                       width={30}
                       height={30}
@@ -99,12 +100,7 @@ const TransitionsModal = ({
               <div onClick={handleNextImage} className={styles.Photos_div_next}>
                 <div>
                   <div className={styles.Photos_button}>
-                    <Image
-                      src="/right-arrow.png"
-                      alt="Next"
-                      width={30}
-                      height={30}
-                    />
+                    <Image src={next} alt="Next" width={30} height={30} />
                   </div>
                 </div>
               </div>
