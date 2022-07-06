@@ -2,6 +2,15 @@ import React, { useState } from "react";
 import { Parallax } from "react-scroll-parallax";
 import styles from "../styles/components/AdditionalBenefit.module.css";
 import Image from "next/image";
+import dinner from "/public/assets/dinner.png";
+import parking from "/public/assets/parking.png";
+import kitchen from "/public/assets/kitchen.png";
+import people from "/public/assets/people.png";
+import ruban from "/public/assets/ruban.png";
+import size from "/public/assets/size.png";
+import vestiaire from "/public/assets/vestiaire.png";
+import wc from "/public/assets/wc.png";
+import wifi from "/public/assets/wifi.png";
 
 const AdditionalBenefit = () => {
   const [entered, setEntered] = useState(false);
@@ -27,7 +36,7 @@ const AdditionalBenefit = () => {
             <div className={styles.AdditionalBenefit_div_image}>
               <Image
                 alt="espaces modulable des caves de la croix douillard"
-                src="/assets/size.png"
+                src={size}
                 // loading={"lazy"}
                 layout="fill"
                 className={styles.Photos_image}
@@ -47,7 +56,7 @@ const AdditionalBenefit = () => {
             <div className={styles.AdditionalBenefit_div_image}>
               <Image
                 alt="Nombres de personnes dans les caves de la croix douillard"
-                src="/assets/people.png"
+                src={people}
                 layout="fill"
                 className={styles.Photos_image}
                 priority="low"
@@ -87,7 +96,7 @@ const AdditionalBenefit = () => {
             <div className={styles.AdditionalBenefit_div_image}>
               <Image
                 alt="Nombre de places de parking des caves de la croix douillard"
-                src="/assets/parking.png"
+                src={parking}
                 layout="fill"
                 className={styles.Photos_image}
                 priority="low"
@@ -109,7 +118,7 @@ const AdditionalBenefit = () => {
             <div className={styles.AdditionalBenefit_div_image}>
               <Image
                 alt="espaces cuisine des caves de la croix douillard"
-                src="/assets/kitchen.png"
+                src={kitchen}
                 // loading={"lazy"}
                 layout="fill"
                 className={styles.Photos_image}
@@ -127,7 +136,7 @@ const AdditionalBenefit = () => {
             <div className={styles.AdditionalBenefit_div_image}>
               <Image
                 alt="Sanitaires nombreux des caves de la croix douillard"
-                src="/assets/wc.png"
+                src={wc}
                 // loading={"lazy"}
                 layout="fill"
                 className={styles.Photos_image}
@@ -149,7 +158,7 @@ const AdditionalBenefit = () => {
             <div className={styles.AdditionalBenefit_div_image}>
               <Image
                 alt="vestiaire des caves de la croix douillard"
-                src="/assets/dinner.png"
+                src={dinner}
                 // loading={"lazy"}
                 layout="fill"
                 className={styles.Photos_image}
@@ -171,7 +180,7 @@ const AdditionalBenefit = () => {
             <div className={styles.AdditionalBenefit_div_image}>
               <Image
                 alt="Wifi disponibles aux caves de la croix douillard"
-                src="/assets/wifi.png"
+                src={wifi}
                 // loading={"lazy"}
                 layout="fill"
                 className={styles.Photos_image}
@@ -191,7 +200,7 @@ const AdditionalBenefit = () => {
             <div className={styles.AdditionalBenefit_div_image}>
               <Image
                 alt="vestiaire des caves de la croix douillard"
-                src="/assets/vestiaire.png"
+                src={vestiaire}
                 // loading={"lazy"}
                 layout="fill"
                 className={styles.Photos_image}
