@@ -11,6 +11,7 @@ import Card from "@mui/material/Card";
 // import CardMedia from "@mui/material/CardMedia";
 // import Typography from "@mui/material/Typography";
 import styles from "../styles/components/Photos.module.css";
+// import Previous from "../assets2/previous.svg";
 
 // const style = {
 //   position: "absolute",
@@ -87,7 +88,7 @@ const TransitionsModal = ({
                 <div>
                   <div className={styles.Photos_button}>
                     <Image
-                      src="/left-arrow.png"
+                      src="/assets2/previous.svg"
                       alt="Previous"
                       width={30}
                       height={30}

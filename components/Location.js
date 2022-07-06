@@ -22,7 +22,7 @@ const Location = () => {
         onExit={() => setEntered(false)}
       />
       <div>
-        <h5>Adresse</h5>
+        <h4>Adresse</h4>
         <p>510 Quai des Violettes, 37400 Amboise</p>
       </div>
       <div className={styles.Location_iFrame_mobile}>
