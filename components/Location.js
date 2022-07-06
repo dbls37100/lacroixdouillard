@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "../styles/components/location.module.css";
 import { Parallax } from "react-scroll-parallax";
-import Maps from "./Maps";
+// import Maps from "./Maps";
 
 const Location = () => {
   const [entered, setEntered] = useState(false);
