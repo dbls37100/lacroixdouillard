@@ -12,10 +12,15 @@ import vestiaire from "/public/assets/vestiaire.png";
 import wc from "/public/assets/wc.png";
 import wifi from "/public/assets/wifi.png";
 
-const AdditionalBenefit = () => {
+const AdditionalBenefit = ({ setColorAfter }) => {
   const [entered, setEntered] = useState(false);
   return (
     <section className={styles.AdditionalBenefit}>
+      <Parallax
+        // onProgressChange={(progress) => setProgress(progress)}
+        onEnter={() => setEntered(true)}
+        onExit={() => setEntered(false)}
+      />
       <h3
         className={
           entered === true
@@ -25,13 +30,15 @@ const AdditionalBenefit = () => {
       >
         Les petits +
       </h3>
-      <Parallax
-        // onProgressChange={(progress) => setProgress(progress)}
-        onEnter={() => setEntered(true)}
-        onExit={() => setEntered(false)}
-      />
+      <p className={styles.AdditionalBenefit_p}>
+        Situées dans un cadre naturel de roche et de verdure qui vous invite à
+        entrer dans ce décor agréable et inhabituel, elles ont été aménagées
+        pour offrir un espace de réception dans un cadre exceptionnel et
+        chaleureux. Leur caractère pittoresque se prête au jeu de nombreuses
+        mises en scène et invite à l&apos;insolite.
+      </p>
       <div className={styles.AdditionalBenefit_div_blockItem}>
-        <div className={styles.AdditionalBenefit_div_itemCard}>
+        <div className={styles.AdditionalBenefit_div_itemCard_hidden}>
           <div className={styles.AdditionalBenefit_div_wrapperImage}>
             <div className={styles.AdditionalBenefit_div_image}>
               <Image
@@ -72,12 +79,12 @@ const AdditionalBenefit = () => {
             </p>
           </div>
         </div>
-        <div className={styles.AdditionalBenefit_div_itemCard}>
+        {/* <div className={styles.AdditionalBenefit_div_itemCard}>
           <div className={styles.AdditionalBenefit_div_wrapperImage}>
             <div className={styles.AdditionalBenefit_div_image}>
               <Image
                 alt="espaces en metre carrée des caves de la croix douillard est de 3450 metre carrée."
-                src="/assets/ruban.png"
+                src={ruban}
                 layout="fill"
                 className={styles.Photos_image}
                 priority="low"
@@ -90,7 +97,7 @@ const AdditionalBenefit = () => {
           <div>
             <p className={styles.AdditionalBenefit_p_texItem}>3450 m²</p>
           </div>
-        </div>
+        </div> */}
         <div className={styles.AdditionalBenefit_div_itemCard}>
           <div className={styles.AdditionalBenefit_div_wrapperImage}>
             <div className={styles.AdditionalBenefit_div_image}>
@@ -107,7 +114,6 @@ const AdditionalBenefit = () => {
             </div>
           </div>
           <div>
-            {" "}
             <p className={styles.AdditionalBenefit_p_texItem}>
               250 places de parking
             </p>
@@ -153,6 +159,7 @@ const AdditionalBenefit = () => {
             </p>
           </div>
         </div>
+        <div className={styles.AdditionalBenefit_hidden}></div>
         <div className={styles.AdditionalBenefit_div_itemCard}>
           <div className={styles.AdditionalBenefit_div_wrapperImage}>
             <div className={styles.AdditionalBenefit_div_image}>
@@ -195,7 +202,7 @@ const AdditionalBenefit = () => {
             <p className={styles.AdditionalBenefit_p_texItem}>Wi-Fi</p>
           </div>
         </div>
-        <div className={styles.AdditionalBenefit_div_itemCard}>
+        <div className={styles.AdditionalBenefit_div_itemCard_hidden}>
           <div className={styles.AdditionalBenefit_div_wrapperImage}>
             <div className={styles.AdditionalBenefit_div_image}>
               <Image
@@ -215,6 +222,7 @@ const AdditionalBenefit = () => {
             <p className={styles.AdditionalBenefit_p_texItem}>Vestiare</p>
           </div>
         </div>
+        <div className={styles.AdditionalBenefit_hidden}></div>
       </div>
     </section>
   );

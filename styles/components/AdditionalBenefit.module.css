@@ -14,7 +14,13 @@
   width: 100%;
   margin-bottom: 2.5rem;
   visibility: visible;
-  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.AdditionalBenefit_p {
+  text-align: center;
+  max-width: 70%;
+  margin: auto;
 }
 
 .OurRoom_h5_title_normal {
@@ -32,7 +38,7 @@
 
 .AdditionalBenefit_div_blockItem {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   width: 80%;
   margin: auto;
@@ -41,7 +47,29 @@
   margin-top: 5%;
 }
 
+.AdditionalBenefit_hidden {
+  visibility: hidden;
+  display: flex;
+}
+
+.AdditionalBenefit_none {
+  display: none;
+}
+
 .AdditionalBenefit_div_itemCard {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 5%;
+  border: 1px black gray;
+  background-color: beige;
+  border-radius: 7%;
+  height: 150px;
+  box-shadow: 1px 2px 1px 1px lightgrey;
+}
+
+.AdditionalBenefit_div_itemCard_hidden {
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -93,6 +121,19 @@
     width: 80%;
     margin: auto;
     margin-top: 5%;
+  }
+  .AdditionalBenefit_hidden {
+    visibility: hidden;
+    display: none;
+  }
+  .AdditionalBenefit_div_itemCard_hidden {
+    display: none;
+  }
+  .AdditionalBenefit_p {
+    text-align: center;
+    max-width: 85%;
+    margin: auto;
+    margin-bottom: 50px;
   }
 }
 

@@ -42,7 +42,6 @@ const Contact = () => {
             setPeopleNumber("");
             setDate("");
             setCompany("");
-            console.log(result.text);
             setOpenAlert(true);
             setSeverity("success");
             setError("Votre message a bien été envoyé");

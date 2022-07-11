@@ -1,15 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 import Image from "next/dist/client/image";
-// import { Header } from "next/dist/lib/load-custom-routes";
-// import Link from "next/link";
 import { NavLink } from "./NavLink";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 
-const Navbar = ({ colorAfter, setColorAfter }) => {
-  const [height, setHeight] = useState(65);
-  const [width, setWidth] = useState(65);
+const Navbar = ({ colorAfter }) => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
 

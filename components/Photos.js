@@ -24,7 +24,7 @@ function srcset(image, size, rows = 1, cols = 1) {
   };
 }
 
-export default function QuiltedImageList() {
+export default function QuiltedImageList({ setColorAfter }) {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
   const [entered, setEntered] = useState(false);
@@ -35,6 +35,11 @@ export default function QuiltedImageList() {
 
   return (
     <section id="Photos" className={styles.Photos}>
+      <Parallax
+        // onProgressChange={(progress) => setProgress(progress)}
+        onEnter={() => setEntered(true)}
+        onExit={() => setEntered(false)}
+      />
       <h3
         className={
           entered === true
@@ -44,11 +49,6 @@ export default function QuiltedImageList() {
       >
         Nos photos
       </h3>
-      <Parallax
-        // onProgressChange={(progress) => setProgress(progress)}
-        onEnter={() => setEntered(true)}
-        onExit={() => setEntered(false)}
-      />
       <ImageList
         sx={{ width: "90%", height: "auto", margin: "5% auto 0 auto" }}
         variant="quilted"

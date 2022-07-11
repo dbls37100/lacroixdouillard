@@ -17,6 +17,11 @@ export default function BasicTable() {
 
   return (
     <section id="OurRoom" className={styles.OurRoom}>
+      <Parallax
+        // onProgressChange={(progress) => setProgress(progress)}
+        onEnter={() => setEntered(true)}
+        onExit={() => setEntered(false)}
+      />
       <h3
         className={
           entered === true
@@ -26,11 +31,6 @@ export default function BasicTable() {
       >
         Salles & espaces
       </h3>
-      <Parallax
-        // onProgressChange={(progress) => setProgress(progress)}
-        onEnter={() => setEntered(true)}
-        onExit={() => setEntered(false)}
-      />
       <TableContainer
         className={styles.OurRoom_TableContainer_desktop}
         sx={{

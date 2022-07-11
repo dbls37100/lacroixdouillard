@@ -9,7 +9,7 @@
   width: 100%;
   margin-bottom: 2.5rem;
   visibility: visible;
-  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .OurRoom_h5_title_normal {

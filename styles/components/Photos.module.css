@@ -1,4 +1,5 @@
 .Photos {
+  margin-top: 80px;
   background: linear-gradient(white, white, beige, beige, beige, white);
 }
 
@@ -9,12 +10,18 @@
   cursor: pointer;
 }
 
+.Photos_p {
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+}
+
 .Photos_h5_title {
   /* font-size: 1.5rem;
   font-weight: bold; */
   margin-bottom: 2.5rem;
   visibility: visible;
-  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .Photos_h5_title_normal {
