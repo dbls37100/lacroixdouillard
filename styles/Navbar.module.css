@@ -324,6 +324,7 @@
     display: flex;
     justify-content: center;
     width: 75px;
+    margin-right: 20px;
   }
   .line {
     fill: none;
@@ -390,6 +391,7 @@
     display: flex;
     justify-content: center;
     width: 75px;
+    margin-right: 20px;
   }
   .opened .line2Black {
     stroke-dasharray: 1 60;
