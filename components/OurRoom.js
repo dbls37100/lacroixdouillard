@@ -11,10 +11,6 @@ import { Parallax } from "react-scroll-parallax";
 export default function BasicTable() {
   const [entered, setEntered] = useState(false);
 
-  // useEffect(() => {
-  //   console.log("il ce passe un truc");
-  // }, [entered]);
-
   return (
     <section id="OurRoom" className={styles.OurRoom}>
       <Parallax
