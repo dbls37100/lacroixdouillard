@@ -28,7 +28,7 @@ export default function BasicTable() {
         Salles & espaces
       </h3>
       <p className={styles.OurRoom_p}>
-        Offrant un espace de réception de 50 à 499 personnes sur 1800 m2
+        Offrant un espace de réception de 50 à 1000 personnes sur 1800 m2
         Modulable et réparti en plusieurs salles, Les Caves de la Croix
         Douillard sont largement pourvues en espace cuisine pour les traiteurs,
         en vestiaires et sanitaires, ainsi qu&apos;un parking en conséquence. Un
