@@ -31,6 +31,15 @@ export default function BasicTable() {
       >
         Salles & espaces
       </h3>
+      <p className={styles.OurRoom_p}>
+        Offrant un espace de réception de 50 à 499 personnes sur 1800 m2
+        Modulable et réparti en plusieurs salles, Les Caves de la Croix
+        Douillard sont largement pourvues en espace cuisine pour les traiteurs,
+        en vestiaires et sanitaires, ainsi qu&apos;un parking en conséquence. Un
+        lieu idéal pour toutes vos manifestations. C&apos;est la lieu parfait
+        pour tout evénements divers, réceptions officielles, privées ou
+        familiales, Congrès, Mariages, Anniversaires, Baptêmes.
+      </p>
       <TableContainer
         className={styles.OurRoom_TableContainer_desktop}
         sx={{
@@ -154,11 +163,7 @@ export default function BasicTable() {
       </TableContainer>
       <h4>Espaces groupés</h4>
       <TableContainer
-        className={
-          entered
-            ? styles.OurRoom_TableContainer_desktop
-            : styles.hidden_class_desktop
-        }
+        className={styles.OurRoom_TableContainer_desktop}
         sx={{
           maxWidth: "80%",
           margin: "auto",
@@ -247,6 +252,7 @@ export default function BasicTable() {
         sx={{
           maxWidth: "80%",
           margin: "auto",
+          overflow: "hidden",
         }}
       >
         <Table aria-label="simple table">
@@ -254,7 +260,7 @@ export default function BasicTable() {
             <TableRow>
               <TableCell
                 style={{
-                  width: "20%",
+                  width: "15%",
                   maxWidth: "20%",
                 }}
               >

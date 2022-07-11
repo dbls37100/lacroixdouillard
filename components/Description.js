@@ -11,12 +11,12 @@ const Description = ({ setColorAfter }) => {
         onEnter={() => setColorAfter(true)}
       /> */}
       <p className={styles.Description_p}>
-        La Cave de la Croix Douillard vous accueille dans sa salle de réception
-        au décor atypique et soigné pour organiser tous vos évènements. Dans cet
-        établissement vous disposerez de plusieurs salles pour vos petits
-        évènements de 50 personnes mais également pour vos manifestations de
-        plus grandes envergures pouvant ainsi accueillir 1000 personnes. Ce
-        décor hors du commun fera de votre évènement un moment inoubliable.
+        Félicitations, vous venez de trouver votre prochain lieu de fetes
+        favoris. Dans cet établissement vous disposerez de plusieurs salles pour
+        vos petits évènements de 50 personnes mais également pour vos
+        manifestations de plus grandes envergures pouvant ainsi accueillir 1000
+        personnes. Ce décor hors du commun fera de votre évènement un moment
+        inoubliable.
       </p>
     </section>
   );

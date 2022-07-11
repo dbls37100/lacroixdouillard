@@ -12,6 +12,14 @@
   animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
+.OurRoom_p {
+  width: 60%;
+  min-width: 60%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: auto;
+  text-align: center;
+}
 .OurRoom_h5_title_normal {
   width: 100%;
   visibility: hidden;
@@ -44,6 +52,8 @@
   margin-bottom: 5%;
   margin-top: 5%;
   visibility: visible;
+  border: 1px rgb(204, 203, 203) solid;
+  border-radius: 27px;
 }
 
 .OurRoom_TableContainer_mobile {
@@ -73,6 +83,15 @@
   .OurRoom {
     margin: 20% 0 5% 0;
   }
+  .OurRoom_p {
+    width: 80%;
+    min-width: 90%;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+  }
   .OurRoom_TableContainer_desktop {
     display: none;
   }
@@ -88,6 +107,8 @@
     height: 100%;
     margin: auto;
     margin-bottom: 20%;
+    border: 1px rgb(204, 203, 203) solid;
+    border-radius: 27px;
   }
   .hidden_class_mobile {
     display: flex;
@@ -98,6 +119,8 @@
     height: 100%;
     margin: auto;
     margin-bottom: 20%;
+    border: 1px rgb(204, 203, 203) solid;
+    border-radius: 27px;
   }
   .OurRoom_TableCell_Desktop_View {
     display: none;

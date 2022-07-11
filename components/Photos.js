@@ -8,7 +8,7 @@ import photo from "/public/photo.webp";
 import photo2 from "/public/photo2.webp";
 import photo3 from "/public/photo3.webp";
 import photo4 from "/public/photo4.webp";
-import photo5 from "/public/photo5.webp";
+import photo5 from "/public/photo5.jpg";
 import photo6 from "/public/photo6.webp";
 import photo7 from "/public/photo7.webp";
 import photo8 from "/public/photo8.webp";

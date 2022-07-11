@@ -67,12 +67,29 @@
 
 .Banner_text {
   animation: fade-in 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: 3.5rem;
+  font-weight: 400;
   font-family: "Alex Brush", cursive;
 }
 
 .Banner_text1 {
+  display: block;
+  max-width: 85%;
+  margin: 0 auto 0 auto;
   animation: fade-in 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  /* font-family: "Alex Brush", cursive; */
+  visibility: visible;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1400px) {
+  .Banner_text1 {
+    display: none;
+  }
+  .Banner_text {
+    animation: fade-in 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: "Alex Brush", cursive;
+  }
 }

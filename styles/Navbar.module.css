@@ -451,7 +451,7 @@
     font-size: x-large;
     display: flex;
     background-color: beige;
-    /* justify-content: space-around; */
+    justify-content: center;
     flex-direction: column;
     position: relative;
     /* margin-top: 15vh; */
