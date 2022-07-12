@@ -27,7 +27,7 @@ async function generate() {
 
             return `
               <url>
-                  <loc>${`https://boisterous-pithivier-ecd9b3.netlify.app${route}`}</loc>
+                  <loc>${`https://lescavesdelacroixdouillard.netlify.app${route}`}</loc>
                   <lastmod>${new Date().toISOString()}</lastmod>
               </url>
             `;
