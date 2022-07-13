@@ -22,7 +22,7 @@ function NavLink({ href, exact, children, ...props }) {
   }
 
   return (
-    <Link scroll={true} href={href}>
+    <Link scroll={true} href={href} rel="canonical">
       <a {...props}>{children}</a>
     </Link>
   );
