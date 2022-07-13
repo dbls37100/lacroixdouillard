@@ -23,7 +23,7 @@ async function generate() {
               .replace("data", "")
               .replace(".js", "")
               .replace(".mdx", "");
-            const route = path === "/index" ? "" : path;
+            const route = path === "/index" ? "/" : path;
 
             return `
               <url>
