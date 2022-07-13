@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://boisterous-pithivier-ecd9b3.netlify.app/sitemap.xml
+Sitemap: https://lescavesdelacroixdouillard.netlify.app/sitemap.xml
