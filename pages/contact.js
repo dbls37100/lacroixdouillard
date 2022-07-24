@@ -116,12 +116,11 @@ const Contact = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>
-          Les Caves de la croix Douillard - Salle de reception à Amboise
-        </title>
+        <title>Les Caves de la Croix Douillard - Contact</title>
+
         <meta
           name="description"
-          content="Contactez les Caves de la Croix Douillard ou demander un devis directement sur le site, salle de reception située à Amboise."
+          content="Contactez les Caves de la Croix Douillard ou demandais un devis directement sur le site, salle de reception située à Amboise. Vous pouvez aussi contacter la cave par email ou  par téléphone."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -133,7 +132,7 @@ const Contact = () => {
             <p className={styles.Contact_p_text}>
               N&apos;hésitez pas as nous contacter via ce formulaire, nous vous
               répondrons au plus vite à toutes vos questions sur votre adresse
-              mail, ou par téléphone.
+              mail, ou par téléphone au 02 47 23 65 00.
             </p>
           </div>
           <form onSubmit={sendEmail} className={styles.Contact_div_form}>

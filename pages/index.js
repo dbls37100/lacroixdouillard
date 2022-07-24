@@ -45,7 +45,7 @@ export default function Home() {
         </title>
         <meta
           name="description"
-          content="Les Caves de la Croix Douillard, location de salle à Amboise, ses photos et sa localisation, nous serrons tres heureux de vous acceuillir pour toutes vos réception, mariage, fetes privées ou séminaires. Si vous chez la meilleur salle d'Amboise, il ne faut pas chercher plus loin."
+          content="Les Caves de la Croix Douillard, location de salle à Amboise, vous vous demandez ou sont les caves ? Vous les avez trouvé nous serrons tres heureux de vous acceuillir pour toutes vos réception, mariage, fetes privées ou séminaires. la plus atypique des salles d'Amboise"
         />
         {/* <meta
           name="title"

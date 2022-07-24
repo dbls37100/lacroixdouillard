@@ -21,7 +21,7 @@ const AdditionalBenefit = ({ setColorAfter }) => {
         onEnter={() => setEntered(true)}
         onExit={() => setEntered(false)}
       />
-      <h3
+      <h2
         className={
           entered === true
             ? styles.OurRoom_h5_title
@@ -29,7 +29,7 @@ const AdditionalBenefit = ({ setColorAfter }) => {
         }
       >
         Les petits +
-      </h3>
+      </h2>
       <p className={styles.AdditionalBenefit_p}>
         Situées dans un cadre naturel de roche et de verdure qui vous invite à
         entrer dans ce décor agréable et inhabituel, elles ont été aménagées

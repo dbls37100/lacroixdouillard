@@ -48,6 +48,10 @@
   margin-bottom: 60px;
 }
 
+.Location_div_adress h3 {
+  font-size: large;
+}
+
 @media (max-width: 600px) {
   .Location_iFrame_desktop {
     display: none;

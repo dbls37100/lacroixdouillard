@@ -40,7 +40,7 @@ export default function QuiltedImageList({ setColorAfter }) {
         onEnter={() => setEntered(true)}
         onExit={() => setEntered(false)}
       />
-      <h3
+      <h2
         className={
           entered === true
             ? styles.Photos_h5_title
@@ -48,7 +48,7 @@ export default function QuiltedImageList({ setColorAfter }) {
         }
       >
         Nos photos
-      </h3>
+      </h2>
       <ImageList
         sx={{ width: "90%", height: "auto", margin: "5% auto 0 auto" }}
         variant="quilted"

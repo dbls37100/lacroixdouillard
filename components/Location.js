@@ -15,7 +15,7 @@ const Location = () => {
         onEnter={() => setEntered(true)}
         onExit={() => setEntered(false)}
       />
-      <h3
+      <h2
         className={
           entered === true
             ? styles.OurRoom_h5_title
@@ -23,7 +23,7 @@ const Location = () => {
         }
       >
         Ou nous trouver
-      </h3>
+      </h2>
       <p className={styles.Photos_p_text}>
         Les Caves de la Croix Douillard sont située à Amboise sur les bords de
         la loire, au coeur de la touraine. A moins de 10 min à pied des caves
@@ -31,7 +31,7 @@ const Location = () => {
         hébergement en tout genre.
       </p>
       <div className={styles.Location_div_adress}>
-        <h4>Adresse</h4>
+        <h3>Adresse</h3>
         <p>510 Quai des Violettes, 37400 Amboise</p>
       </div>
       <div className={styles.Location_iFrame_mobile}>

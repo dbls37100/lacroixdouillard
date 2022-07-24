@@ -18,7 +18,7 @@ export default function BasicTable() {
         onEnter={() => setEntered(true)}
         onExit={() => setEntered(false)}
       />
-      <h3
+      <h2
         className={
           entered === true
             ? styles.OurRoom_h5_title
@@ -26,7 +26,7 @@ export default function BasicTable() {
         }
       >
         Salles & espaces
-      </h3>
+      </h2>
       <p className={styles.OurRoom_p}>
         Offrant un espace de réception de 50 à 1000 personnes sur 1800 m2
         Modulable et réparti en plusieurs salles, Les Caves de la Croix

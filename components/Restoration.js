@@ -13,7 +13,7 @@ const Restoration = () => {
         onEnter={() => setEntered(true)}
         onExit={() => setEntered(false)}
       />
-      <h3
+      <h2
         className={
           entered === true
             ? styles.OurRoom_h5_title
@@ -21,7 +21,7 @@ const Restoration = () => {
         }
       >
         Restauration
-      </h3>
+      </h2>
       <div className={styles.Restoration_div_displaying}>
         <div className={styles.Restoration_div_images}>
           <Image
@@ -41,7 +41,7 @@ const Restoration = () => {
             d&apos;information, ou un devis, n&apos;hésitez pas à nous contacter
             en cliquant sur le lien ci-dessous.
           </p>
-          <h5>Nos clients</h5>
+          <h3>Nos clients</h3>
           <p className={styles.Restoration_p_customer}>
             Val Touraine habitat , Sogarep , Edf , Relaxsens , Action enfance ,
             Gaumont cinéma (tournage au château d&apos;Amboise)
