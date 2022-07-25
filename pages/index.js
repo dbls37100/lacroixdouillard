@@ -40,17 +40,12 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>
-          Les Caves de la croix Douillard - Salle de reception à Amboise
-        </title>
+        <title>Les Caves de la croix Douillard</title>
         <meta
           name="description"
           content="Les Caves de la Croix Douillard, location de salle à Amboise, vous vous demandez ou sont les caves ? Vous les avez trouvé nous serrons tres heureux de vous acceuillir pour toutes vos réception, mariage, fetes privées ou séminaires. la plus atypique des salles d'Amboise"
         />
-        {/* <meta
-          name="title"
-          content="Les Caves de la croix Douillard - Salle de reception à Amboise"
-        /> */}
+        <meta name="title" content="Les Caves de la croix Douillard" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
